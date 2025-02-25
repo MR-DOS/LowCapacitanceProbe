@@ -1,0 +1,12 @@
+# Simulation outputs
+*.op.raw
+*.raw
+
+# Plots
+*.plt
+
+# Simulation logs
+*.log
+
+# Netlists
+*.net
