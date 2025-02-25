@@ -1,21 +1,32 @@
 Circuit: * C:\Users\polasekp\Documents\SH_private\LowCapacitanceProbe\Simulation\probe.asc
 
-WARNING: Less than two connections to node N009.  This node is used by V3.
-Direct Newton iteration for .op point succeeded.
+WARNING: Node N004 is floating.
 
-Date: Tue Feb 25 11:39:03 2025
-Total elapsed time: 0.060 seconds.
+WARNING: Less than two connections to node N011.  This node is used by V3.
+WARNING: Less than two connections to node N017.  This node is used by V6.
+Direct Newton iteration for .op point succeeded.
+.step cin=1.5e-012
+.step cin=1.7e-012
+.step cin=1.9e-012
+.step cin=2.1e-012
+.step cin=2.3e-012
+.step cin=2.5e-012
+.step cin=2.7e-012
+.step cin=2.9e-012
+.step cin=3e-012
+
+Date: Tue Feb 25 12:53:07 2025
+Total elapsed time: 1.283 seconds.
 
 tnom = 27
 temp = 27
 method = trap
-totiter = 29
+totiter = 30
 traniter = 0
 tranpoints = 0
 accept = 0
 rejected = 0
-matrix size = 34
-fillins = 44
-solver = Normal
-Matrix Compiler1:     293 opcodes
-Matrix Compiler2: 3.56 KB object code size
+matrix size = 67
+fillins = 91
+Matrix Compiler1:     598 opcodes
+Matrix Compiler2: 8.15 KB object code size
