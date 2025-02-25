@@ -490,7 +490,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "FETProbe_v2.kicad_pro",
+    "filename": "LowCapacitanceProbe.kicad_pro",
     "version": 3
   },
   "net_settings": {
