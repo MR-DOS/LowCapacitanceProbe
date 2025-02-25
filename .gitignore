@@ -28,3 +28,16 @@ fp-info-cache
 *.xml
 *.csv
 *.lck
+
+# Simulation outputs
+*.op.raw
+*.raw
+
+# Simulation plots
+*.plt
+
+# Simulation logs
+*.log
+
+# Simulation netlists
+*.net
