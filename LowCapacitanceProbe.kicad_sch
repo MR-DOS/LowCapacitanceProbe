@@ -2939,9 +2939,9 @@
 		)
 		(uuid "3644709b-4afd-46a7-8e91-c81efb7816f9")
 	)
-	(text "~2,28 V"
+	(text "~2,3 V"
 		(exclude_from_sim no)
-		(at 116.84 88.9 0)
+		(at 116.84 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2950,31 +2950,31 @@
 		)
 		(uuid "564fc1b1-64d6-4fc0-8ed7-af7b440b2512")
 	)
-	(text "Multi-turn trimmer"
+	(text "The resistor protects external gear from damage!\nIts assembly is mandatory!"
 		(exclude_from_sim no)
-		(at 120.65 64.77 0)
+		(at 194.31 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
-		)
-		(uuid "5b7ae994-256e-4b58-945d-18c8a37b0254")
-	)
-	(text "The resistor protects external gear from damage!"
-		(exclude_from_sim no)
-		(at 163.83 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
+			(justify bottom)
 		)
 		(uuid "65722de2-ccbe-4172-ae9e-db418f417709")
 	)
+	(text "Bias / output impedance setting"
+		(exclude_from_sim no)
+		(at 115.57 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "65f6e093-fc78-4c15-95e2-caf4618ff97b")
+	)
 	(text "Vout = 1.235 V*(1+R5/R6)\nR6 > 10k\nVout = 4.94 V"
 		(exclude_from_sim no)
-		(at 82.55 58.42 0)
+		(at 82.55 22.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2983,14 +2983,25 @@
 		)
 		(uuid "72fca28a-311e-4210-ab48-5d1466c2bd4b")
 	)
-	(text "Screw connected to input!"
+	(text "Calibration process:\n1) Perform this calibration in ESD safe environment!\n   Short the input, power up the probe (with VNA disconnected).\n   Not shorting the input may affect the measurement.\n2) Connect VNA, measure output impedance of the probe.\n   Tune the bias on gate 2 to get 50 Ohm output.\n3) Disconnect VNA, reconnect it to measure S21 of the probe.\n   (If varicap tuning is assembled, set it to highest possible voltage.)\n   Tune the input capacitor to get 10:1 (-20 dB) response.\n4) (If assembled, use the varicap tuning to fine-tune the gain).\n   If varicap tuning is not used, change bias to fine-tune gain.\n5) Re-measure the output impedance. If out of spec, repeat these steps.\n   This is needed because the parameters are not fully independent.\n   \nNotes:\n1) If desired gain cannot be achieved, change C3.\n2) If output impedance cannot be achieved, change R10.\n3) If varicap tuning is too narrow/broad, change C11.\n   Too large C11 or too steep D1 can introduce non-linearity.\n4) R11, R12 and R18 delinearise the trimmers to make tuning easier.\n5) Trimmer C9 has screw connected to input to make tuning easier.\n   (The input is low impedance source, net after the capacitor is not.)\n6) For tuning C9, use low capacitance isolated tuning screwdriver.\n   Never tune the probe when connected to dangerous voltages!\n7) In case of bad low bandwidth, change L1.\n8) In case of instability, notches and peaks at > 500 MHz, change R7-9."
 		(exclude_from_sim no)
-		(at 87.63 87.63 0)
+		(at 209.55 13.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left top)
+		)
+		(uuid "a0283a34-9d06-48f4-9ae8-162b35e84409")
+	)
+	(text "Screw connected to input!"
+		(exclude_from_sim no)
+		(at 97.79 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
 		)
 		(uuid "cb4d7070-636f-4b1c-95f9-73bc22a85194")
 	)
@@ -3332,7 +3343,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 101.6) (xy 161.29 101.6)
+			(xy 156.21 101.6) (xy 160.02 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3742,7 +3753,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 101.6) (xy 151.13 101.6)
+			(xy 140.97 101.6) (xy 148.59 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3902,7 +3913,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 101.6) (xy 171.45 101.6)
+			(xy 167.64 101.6) (xy 171.45 101.6)
 		)
 		(stroke
 			(width 0)
@@ -4115,7 +4126,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 154.94 101.6 90)
+		(at 152.4 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4123,7 +4134,7 @@
 		(dnp no)
 		(uuid "0b0ba89b-e5d9-4a52-911a-4619c67672fd")
 		(property "Reference" "R13"
-			(at 154.94 99.06 90)
+			(at 152.4 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4131,7 +4142,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 154.94 97.028 90)
+			(at 152.4 97.028 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4139,7 +4150,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 103.378 90)
+			(at 152.4 103.378 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4148,7 +4159,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 101.6 0)
+			(at 152.4 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4157,7 +4168,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 154.94 101.6 0)
+			(at 152.4 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4399,7 +4410,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 165.1 101.6 90)
+		(at 163.83 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4407,7 +4418,7 @@
 		(dnp no)
 		(uuid "3c646c61-400f-4f60-98b8-05ed5e632a3f")
 		(property "Reference" "C5"
-			(at 165.1 95.0149 90)
+			(at 163.83 95.0149 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4415,7 +4426,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 165.1 97.79 90)
+			(at 163.83 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4423,7 +4434,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 168.91 100.6348 0)
+			(at 167.64 100.6348 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4432,7 +4443,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 101.6 0)
+			(at 163.83 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4441,7 +4452,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 165.1 101.6 0)
+			(at 163.83 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4450,7 +4461,7 @@
 			)
 		)
 		(property "dielectric" "NP0"
-			(at 165.1 101.6 0)
+			(at 163.83 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4459,7 +4470,7 @@
 			)
 		)
 		(property "MPN" "GRM3195C1H104GA05D"
-			(at 165.1 101.6 0)
+			(at 163.83 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4468,7 +4479,7 @@
 			)
 		)
 		(property "OC_LCSC" "C907944"
-			(at 165.1 101.6 0)
+			(at 163.83 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4477,7 +4488,7 @@
 			)
 		)
 		(property "LCSC Part" "C2981728"
-			(at 165.1 101.6 0)
+			(at 163.83 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4486,7 +4497,7 @@
 			)
 		)
 		(property "LCSC alternative" "C2981728"
-			(at 165.1 101.6 90)
+			(at 163.83 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7316,7 +7327,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "2k"
 			(at 106.68 67.818 90)
 			(effects
 				(font
@@ -7621,7 +7632,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "2k"
 			(at 124.46 67.818 90)
 			(effects
 				(font
