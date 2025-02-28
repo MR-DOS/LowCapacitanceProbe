@@ -583,9 +583,6 @@
 			(embedded_fonts no)
 		)
 		(symbol "Device:C_Trim"
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
 				(offset 0.254)
 				(hide yes)
@@ -748,9 +745,6 @@
 			(embedded_fonts no)
 		)
 		(symbol "Device:D_Capacitance"
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1078,6 +1072,157 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:FerriteBead_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at 1.905 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "FerriteBead_Small"
+				(at 1.905 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.889) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -0.7874)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2918,9 +3063,20 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Do not connect voltages above 100 V!\nInput waveforms max. 50 Vp-p.\nPermissible peaks up to 150 V.\nDamage likely above 350 V."
+		(exclude_from_sim no)
+		(at 39.37 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "084ed978-e32b-4a0e-a9d9-98ab2517dd05")
+	)
 	(text "Use only RF capacitors with low losses, ideally suited for >5 GHz!"
 		(exclude_from_sim no)
-		(at 149.86 90.17 0)
+		(at 92.71 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2952,7 +3108,7 @@
 	)
 	(text "The resistor protects external gear from damage!\nIts assembly is mandatory!"
 		(exclude_from_sim no)
-		(at 194.31 124.46 0)
+		(at 196.85 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2983,7 +3139,7 @@
 		)
 		(uuid "72fca28a-311e-4210-ab48-5d1466c2bd4b")
 	)
-	(text "Calibration process:\n1) Perform this calibration in ESD safe environment!\n   Short the input, power up the probe (with VNA disconnected).\n   Not shorting the input may affect the measurement.\n2) Connect VNA, measure output impedance of the probe.\n   Tune the bias on gate 2 to get 50 Ohm output.\n3) Disconnect VNA, reconnect it to measure S21 of the probe.\n   (If varicap tuning is assembled, set it to highest possible voltage.)\n   Tune the input capacitor to get 10:1 (-20 dB) response.\n4) (If assembled, use the varicap tuning to fine-tune the gain).\n   If varicap tuning is not used, change bias to fine-tune gain.\n5) Re-measure the output impedance. If out of spec, repeat these steps.\n   This is needed because the parameters are not fully independent.\n   \nNotes:\n1) If desired gain cannot be achieved, change C3.\n2) If output impedance cannot be achieved, change R10.\n3) If varicap tuning is too narrow/broad, change C11.\n   Too large C11 or too steep D1 can introduce non-linearity.\n4) R11, R12 and R18 delinearise the trimmers to make tuning easier.\n5) Trimmer C9 has screw connected to input to make tuning easier.\n   (The input is low impedance source, net after the capacitor is not.)\n6) For tuning C9, use low capacitance isolated tuning screwdriver.\n   Never tune the probe when connected to dangerous voltages!\n7) In case of bad low bandwidth, change L1.\n8) In case of instability, notches and peaks at > 500 MHz, change R7-9."
+	(text "Calibration process:\n1) Perform this calibration in ESD safe environment!\n   Short the input, power up the probe (with VNA disconnected).\n   Not shorting the input may affect the measurement.\n2) Connect VNA, measure output impedance of the probe.\n   Tune the bias on gate 2 to get 50 Ohm output.\n3) Disconnect VNA, reconnect it to measure S21 of the probe.\n   (If varicap tuning is assembled, set it to highest possible voltage.)\n   Tune the input capacitor to get 10:1 (-20 dB) response.\n4) (If assembled, use the varicap tuning to fine-tune the gain).\n   If varicap tuning is not used, change bias to fine-tune gain.\n5) Re-measure the output impedance. If out of spec, repeat these steps.\n   This is needed because the parameters are not fully independent.\n   \nNotes:\n1) If desired gain cannot be achieved, change C3.\n2) If output impedance cannot be achieved, change R10.\n3) If varicap tuning is too narrow/broad, change C11.\n   Too large C11 or too steep D1 can introduce non-linearity.\n4) R11, R12 and R18 delinearise the trimmers to make tuning easier.\n5) Trimmer C9 has screw connected to input to make tuning easier.\n   (The input is low impedance source, net after the capacitor is not.)\n6) For tuning C9, use low capacitance isolated tuning screwdriver.\n   Never tune the probe when connected to dangerous voltages!\n7) In case of bad low bandwidth, change L1.\n8) In case of instability, notches and peaks at > 500 MHz, change R7-9.\n9) Clockwise rotation of trimmers increases gain / drain current.\n\nCritical components have MPNs assigned, except for BF998 (look on eBay).\nBF998 with MOW marking may be fake, genuine are MOs or MOp :-)\nMOP with a bar above \"p\" has reversed footprint!\n\nThis probe is nonlinear, distortion increases with measured amplitude.\nAbov 50 Vp-p, distortion may increase due to protective diodes on G2."
 		(exclude_from_sim no)
 		(at 209.55 13.97 0)
 		(effects
@@ -3004,6 +3160,17 @@
 			(justify bottom)
 		)
 		(uuid "cb4d7070-636f-4b1c-95f9-73bc22a85194")
+	)
+	(text "Ids~16 mA"
+		(exclude_from_sim no)
+		(at 142.24 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8814480-166a-427a-8c17-95adcd1283d9")
 	)
 	(text "5.5 ... 16 V"
 		(exclude_from_sim no)
@@ -3034,7 +3201,7 @@
 		(uuid "2e07b675-241e-4bdb-851f-8495ab733011")
 	)
 	(junction
-		(at 194.31 101.6)
+		(at 196.85 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2ffc2dff-33cb-4fa6-ab33-d0d29871b0a8")
@@ -3088,13 +3255,13 @@
 		(uuid "943cb2b6-206f-4aab-a045-cc4ab0ec1ed3")
 	)
 	(junction
-		(at 171.45 101.6)
+		(at 173.99 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "981ff4de-0330-4757-b746-0cb983df5e7c")
 	)
 	(junction
-		(at 66.04 31.75)
+		(at 68.58 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a65ca40-d10d-4188-be59-1ed76474d65d")
@@ -3124,7 +3291,7 @@
 		(uuid "d008af63-8957-49b6-bf1a-33e8676972d4")
 	)
 	(junction
-		(at 184.15 101.6)
+		(at 186.69 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea77ba09-319a-49bd-ad5b-49f4c76f232c")
@@ -3143,7 +3310,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 31.75) (xy 66.04 34.29)
+			(xy 68.58 31.75) (xy 68.58 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3163,7 +3330,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 101.6) (xy 194.31 101.6)
+			(xy 186.69 101.6) (xy 196.85 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3233,7 +3400,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 66.04) (xy 140.97 66.04)
+			(xy 152.4 66.04) (xy 140.97 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3263,6 +3430,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 50.8) (xy 140.97 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2be522c4-e71a-4234-8e56-c9aa45e32d45")
+	)
+	(wire
+		(pts
 			(xy 97.79 77.47) (xy 102.87 77.47)
 		)
 		(stroke
@@ -3283,7 +3460,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 101.6) (xy 184.15 101.6)
+			(xy 184.15 101.6) (xy 186.69 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3303,7 +3480,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 114.3) (xy 184.15 111.76)
+			(xy 186.69 114.3) (xy 186.69 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3313,7 +3490,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 31.75) (xy 66.04 31.75)
+			(xy 44.45 31.75) (xy 68.58 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3330,6 +3507,16 @@
 			(type default)
 		)
 		(uuid "42a8a5a4-6037-4554-bcb7-92cbef37f00f")
+	)
+	(wire
+		(pts
+			(xy 140.97 60.96) (xy 140.97 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4851550c-1825-46e6-8c5b-01a0be02e061")
 	)
 	(wire
 		(pts
@@ -3393,7 +3580,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 31.75) (xy 140.97 66.04)
+			(xy 140.97 31.75) (xy 140.97 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3423,7 +3610,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 101.6) (xy 173.99 101.6)
+			(xy 173.99 101.6) (xy 176.53 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3433,7 +3620,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 114.3) (xy 205.74 106.68)
+			(xy 208.28 114.3) (xy 208.28 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3443,7 +3630,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 76.2) (xy 149.86 80.01)
+			(xy 152.4 76.2) (xy 152.4 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3463,7 +3650,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 101.6) (xy 171.45 104.14)
+			(xy 173.99 101.6) (xy 173.99 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3473,7 +3660,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 111.76) (xy 171.45 114.3)
+			(xy 173.99 111.76) (xy 173.99 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3493,7 +3680,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 68.58) (xy 149.86 66.04)
+			(xy 152.4 68.58) (xy 152.4 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3513,7 +3700,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 114.3) (xy 194.31 111.76)
+			(xy 196.85 114.3) (xy 196.85 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3683,7 +3870,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 101.6) (xy 184.15 104.14)
+			(xy 186.69 101.6) (xy 186.69 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3723,7 +3910,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 101.6) (xy 200.66 101.6)
+			(xy 196.85 101.6) (xy 203.2 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3763,7 +3950,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 31.75) (xy 78.74 31.75)
+			(xy 68.58 31.75) (xy 78.74 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3853,7 +4040,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 101.6) (xy 194.31 104.14)
+			(xy 196.85 101.6) (xy 196.85 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3913,7 +4100,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 101.6) (xy 171.45 101.6)
+			(xy 167.64 101.6) (xy 173.99 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3942,7 +4129,7 @@
 		(uuid "7ae103b2-8808-43ca-8279-63b631b3a5e5")
 	)
 	(label "out"
-		(at 187.96 101.6 0)
+		(at 190.5 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3953,7 +4140,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 66.04 38.1 180)
+		(at 68.58 38.1 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3961,7 +4148,7 @@
 		(dnp no)
 		(uuid "0047442b-fbd8-450b-afc5-a62cac7beac9")
 		(property "Reference" "C2"
-			(at 68.58 36.5949 0)
+			(at 71.12 36.5949 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3970,7 +4157,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 68.58 39.37 0)
+			(at 71.12 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3978,8 +4165,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 65.0748 34.29 0)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 67.6148 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3987,8 +4174,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 66.04 38.1 0)
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL31A106MBHNNN.do"
+			(at 68.58 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3997,7 +4184,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 38.1 0)
+			(at 68.58 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4005,25 +4192,16 @@
 				(hide yes)
 			)
 		)
-		(property "voltage" "25V"
-			(at 69.85 41.91 0)
+		(property "voltage" "50 V"
+			(at 73.66 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "MPN" "CL10A106MA8NRNC"
-			(at 66.04 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OC_LCSC" "C96446"
-			(at 66.04 38.1 0)
+		(property "MPN" "CL31A106MBHNNNE"
+			(at 68.58 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4031,8 +4209,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C96446"
-			(at 66.04 38.1 0)
+		(property "Mouser" "187-CL31A106MBHNNNE"
+			(at 68.58 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4057,15 +4235,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 184.15 107.95 180)
+		(at 115.57 97.79 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
-		(uuid "08db49ee-67a8-487f-b6df-d5de902d3689")
-		(property "Reference" "C7"
-			(at 187.96 106.68 0)
+		(dnp no)
+		(uuid "05c28eca-a1bd-4e7d-af2c-20e7a60f0099")
+		(property "Reference" "C11"
+			(at 116.84 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4073,8 +4251,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "DNP"
-			(at 187.96 109.22 0)
+		(property "Value" "3p"
+			(at 116.84 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4082,8 +4260,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 183.1848 104.14 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 114.6048 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4091,8 +4269,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 184.15 107.95 0)
+		(property "Datasheet" "https://cz.mouser.com/datasheet/2/40/600F-2899696.pdf"
+			(at 115.57 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4101,7 +4279,103 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 184.15 107.95 0)
+			(at 115.57 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "600F3R0CT250XT"
+			(at 115.57 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "581-600F3R0CT"
+			(at 115.57 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "250 V"
+			(at 116.84 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "1"
+			(uuid "213b9ffc-8fcb-4698-8cb4-6c37b7aee25d")
+		)
+		(pin "2"
+			(uuid "829c00b0-22fc-4394-b570-93507812526b")
+		)
+		(instances
+			(project "LowCapacitanceProbe"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 186.69 107.95 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "08db49ee-67a8-487f-b6df-d5de902d3689")
+		(property "Reference" "C7"
+			(at 190.5 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DNP"
+			(at 190.5 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 185.7248 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 186.69 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4149,7 +4423,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 152.4 103.378 90)
 			(effects
 				(font
@@ -4218,7 +4492,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 90.678 110.49 90)
 			(effects
 				(font
@@ -4261,34 +4535,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 115.57 97.79 180)
+		(lib_id "Device:R")
+		(at 140.97 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0e3f1f1f-cbe1-4505-95b5-317301d1fd97")
-		(property "Reference" "C11"
-			(at 118.11 96.52 0)
+		(uuid "15546dee-73da-4d25-8e4c-5f1fd722b270")
+		(property "Reference" "R19"
+			(at 142.748 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "3p"
-			(at 118.11 99.06 0)
+		(property "Value" "0R"
+			(at 143.002 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 114.6048 93.98 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 139.192 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4297,7 +4571,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 97.79 0)
+			(at 140.97 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4305,8 +4579,103 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 115.57 97.79 0)
+		(property "Description" "Resistor"
+			(at 140.97 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c11590ef-dcfa-46f5-a645-4f13283193d2")
+		)
+		(pin "1"
+			(uuid "871a61f2-1fb7-447c-a7cb-b7940f252fda")
+		)
+		(instances
+			(project "LowCapacitanceProbe"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 113.03 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26220156-4094-4451-a85e-b3adede698d3")
+		(property "Reference" "C1"
+			(at 115.57 36.5949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10uF"
+			(at 115.57 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 112.0648 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL31A106MBHNNN.do"
+			(at 113.03 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "voltage" "50 V"
+			(at 118.11 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL31A106MBHNNNE"
+			(at 113.03 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "187-CL31A106MBHNNNE"
+			(at 113.03 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4315,15 +4684,108 @@
 			)
 		)
 		(pin "1"
-			(uuid "e0ed770e-be53-499f-809d-920531c042b0")
+			(uuid "87b430de-8b08-4b8b-9f83-0d398d3cf82b")
 		)
 		(pin "2"
-			(uuid "ade3a0ba-fd75-4bec-8462-8e865f0ec69c")
+			(uuid "9d3a26e9-3640-4787-a210-7814e8df5544")
 		)
 		(instances
 			(project "LowCapacitanceProbe"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C11")
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 106.68 77.47 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2edb04de-63b5-4f35-ba4d-164753747a90")
+		(property "Reference" "C4"
+			(at 106.68 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 106.68 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 102.87 78.4352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cz.mouser.com/datasheet/2/40/530l-3169674.pdf"
+			(at 106.68 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 106.68 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "530L104KT16T"
+			(at 106.68 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "581-530L104KT16T"
+			(at 106.68 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "16V"
+			(at 110.49 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e8accfeb-e2ff-4906-acc7-7b9683c95e8e")
+		)
+		(pin "2"
+			(uuid "3ca37ae6-2079-4ec3-b6bf-f2194ce33055")
+		)
+		(instances
+			(project "LowCapacitanceProbe"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -4409,120 +4871,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 163.83 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3c646c61-400f-4f60-98b8-05ed5e632a3f")
-		(property "Reference" "C5"
-			(at 163.83 95.0149 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 163.83 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 167.64 100.6348 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 163.83 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 163.83 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "dielectric" "NP0"
-			(at 163.83 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "GRM3195C1H104GA05D"
-			(at 163.83 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OC_LCSC" "C907944"
-			(at 163.83 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C2981728"
-			(at 163.83 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC alternative" "C2981728"
-			(at 163.83 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8aeda7bd-b078-427a-a185-d5bc595c6436")
-		)
-		(pin "2"
-			(uuid "251669f2-aed1-46fe-b2e4-9582ff1e4084")
-		)
-		(instances
-			(project "FETProbe_v2"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 205.74 114.3 0)
+		(at 208.28 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4530,7 +4880,7 @@
 		(dnp no)
 		(uuid "4160bbf7-ffff-4c5c-a647-5ee58ddecf06")
 		(property "Reference" "#PWR0107"
-			(at 205.74 120.65 0)
+			(at 208.28 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4539,7 +4889,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 205.74 118.11 0)
+			(at 208.28 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4547,7 +4897,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 114.3 0)
+			(at 208.28 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4556,7 +4906,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 114.3 0)
+			(at 208.28 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4565,7 +4915,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 114.3 0)
+			(at 208.28 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4735,7 +5085,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 66.04 41.91 0)
+		(at 68.58 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4743,7 +5093,7 @@
 		(dnp no)
 		(uuid "4be82219-a5a8-457b-b5b1-b25ac5d52c8a")
 		(property "Reference" "#PWR05"
-			(at 66.04 48.26 0)
+			(at 68.58 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4752,7 +5102,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 66.04 45.72 0)
+			(at 68.58 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4760,7 +5110,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 41.91 0)
+			(at 68.58 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4769,7 +5119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 41.91 0)
+			(at 68.58 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4778,7 +5128,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 41.91 0)
+			(at 68.58 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4864,76 +5214,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer")
-		(at 115.57 66.04 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4f7dabb4-33ed-45c3-9099-d2970640a8d3")
-		(property "Reference" "RV1"
-			(at 115.57 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 115.57 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.57 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 115.57 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Potentiometer"
-			(at 115.57 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "2fe81951-59c9-49ce-8f5d-6681d232590c")
-		)
-		(pin "1"
-			(uuid "fca71319-87b3-4479-aed2-c8f579ed1da0")
-		)
-		(pin "2"
-			(uuid "c280a197-592d-462c-b7db-7e9cf92ac244")
-		)
-		(instances
-			(project ""
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "RV1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 130.81 82.55 0)
 		(unit 1)
@@ -4960,7 +5240,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 129.032 82.55 90)
 			(effects
 				(font
@@ -5115,7 +5395,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 106.68 104.648 90)
 			(effects
 				(font
@@ -5217,6 +5497,95 @@
 			(project "FETProbe_v2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 115.57 66.04 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "60b708d1-bdc0-48c6-8cd1-dae6313a042c")
+		(property "Reference" "RV1"
+			(at 115.57 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 115.57 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3006W_Horizontal"
+			(at 115.57 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cz.mouser.com/datasheet/2/54/3006-1649234.pdf"
+			(at 115.57 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 115.57 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "Bourns 3006W-1-103"
+			(at 115.57 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "652-3006W-1-103"
+			(at 115.57 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "4e9b30bf-0262-4bfe-b0d4-970ef516af26")
+		)
+		(pin "1"
+			(uuid "409715bc-3984-4ac5-a6cb-ffa81416d03b")
+		)
+		(pin "2"
+			(uuid "e776d3b7-4fc6-4ef3-b723-7c5b56cdd712")
+		)
+		(instances
+			(project "LowCapacitanceProbe"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "RV1")
 					(unit 1)
 				)
 			)
@@ -5416,7 +5785,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 110.49 90.4748 0)
 			(effects
 				(font
@@ -5425,7 +5794,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cz.mouser.com/datasheet/2/40/600F-2899696.pdf"
 			(at 106.68 91.44 0)
 			(effects
 				(font
@@ -5443,6 +5812,32 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "600F3R0CT250XT"
+			(at 106.68 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "581-600F3R0CT"
+			(at 106.68 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "250 V"
+			(at 106.68 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d53f2a67-beb2-4917-b964-afd839fd6eb9")
 		)
@@ -5453,6 +5848,76 @@
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 140.97 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "774eda34-26e8-4482-afdb-a6275954df6a")
+		(property "Reference" "FB1"
+			(at 143.51 46.9518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0R"
+			(at 143.51 49.4918 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 139.192 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 140.97 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d88dc470-f843-44eb-8a01-979fb809366d")
+		)
+		(pin "1"
+			(uuid "22c04c67-c40e-4784-9b39-e94b291ec976")
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "FB1")
 					(unit 1)
 				)
 			)
@@ -5525,7 +5990,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 80.01 0)
+		(at 152.4 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5533,7 +5998,7 @@
 		(dnp no)
 		(uuid "83ce38df-4e96-4991-b08e-73bc53404401")
 		(property "Reference" "#PWR0115"
-			(at 149.86 86.36 0)
+			(at 152.4 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5542,7 +6007,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.86 83.82 0)
+			(at 152.4 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5550,7 +6015,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 80.01 0)
+			(at 152.4 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5559,7 +6024,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 80.01 0)
+			(at 152.4 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5568,7 +6033,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 80.01 0)
+			(at 152.4 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5693,7 +6158,8 @@
 	)
 	(symbol
 		(lib_id "Device:C_Trim")
-		(at 97.79 91.44 90)
+		(at 97.79 91.44 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5701,7 +6167,7 @@
 		(dnp no)
 		(uuid "87871726-26ce-4cdc-b568-557cd9b5aca9")
 		(property "Reference" "C9"
-			(at 97.536 96.52 90)
+			(at 97.79 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5709,14 +6175,14 @@
 			)
 		)
 		(property "Value" "1.5-3p"
-			(at 97.536 99.06 90)
+			(at 97.79 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_Trimmer_Voltronics_JR"
 			(at 97.79 91.44 0)
 			(effects
 				(font
@@ -5725,7 +6191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cz.mouser.com/datasheet/2/218/knowles_12132018_J_Series_Trim-1510080.pdf"
 			(at 97.79 91.44 0)
 			(effects
 				(font
@@ -5741,6 +6207,32 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "JR030"
+			(at 97.79 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "768-JR030"
+			(at 97.79 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100 V"
+			(at 97.79 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -5785,7 +6277,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 113.792 82.55 90)
 			(effects
 				(font
@@ -5828,123 +6320,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 149.86 72.39 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8feecfc1-b83a-4c9a-b467-a6abc7fd45d8")
-		(property "Reference" "C10"
-			(at 153.67 71.1199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100nF"
-			(at 153.67 73.6599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 148.8948 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 149.86 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "dielectric" "NP0"
-			(at 149.86 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "GRM3195C1H104GA05D"
-			(at 149.86 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OC_LCSC" "C907944"
-			(at 149.86 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C2981728"
-			(at 149.86 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC alternative" "C2981728"
-			(at 149.86 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8a410c1e-70ea-4bf1-a77d-a348e3a24f39")
-		)
-		(pin "2"
-			(uuid "ec5a64ee-d9e0-4bef-bd3f-9fab89bce435")
-		)
-		(instances
-			(project "LowCapacitanceProbe"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
-		(at 177.8 101.6 90)
+		(at 180.34 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5953,7 +6330,7 @@
 		(fields_autoplaced yes)
 		(uuid "9193449c-4fac-41a5-82ac-dd4f05ce55c2")
 		(property "Reference" "L1"
-			(at 177.8 96.52 90)
+			(at 180.34 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5961,15 +6338,15 @@
 			)
 		)
 		(property "Value" "4n7"
-			(at 177.8 99.06 90)
+			(at 180.34 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 177.8 101.6 0)
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
+			(at 180.34 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5977,8 +6354,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 177.8 101.6 0)
+		(property "Datasheet" "https://cz.mouser.com/datasheet/2/281/1/JELF243B_0010-1699614.pdf"
+			(at 180.34 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5987,7 +6364,25 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 177.8 101.6 0)
+			(at 180.34 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LQG15HS4N7B02D"
+			(at 180.34 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "81-LQG15HS4N7B02D"
+			(at 180.34 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6037,7 +6432,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 139.192 82.55 90)
 			(effects
 				(font
@@ -6062,6 +6457,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Rating" "~2.6 mW"
+			(at 146.05 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -6098,7 +6501,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "SMV1232"
 			(at 118.11 111.7599 90)
 			(effects
 				(font
@@ -6107,7 +6510,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 115.57 110.49 0)
 			(effects
 				(font
@@ -6116,7 +6519,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cz.mouser.com/datasheet/2/472/SMV123x_Series_200058AA-3364699.pdf"
 			(at 115.57 110.49 0)
 			(effects
 				(font
@@ -6127,6 +6530,24 @@
 		)
 		(property "Description" "Variable capacitance diode"
 			(at 115.57 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SMV1231-079LF"
+			(at 115.57 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "873-SMV1231-079LF"
+			(at 115.57 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6216,7 +6637,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 171.45 114.3 0)
+		(at 173.99 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6224,7 +6645,7 @@
 		(dnp no)
 		(uuid "9a595c4c-9ac1-4ae3-8ff3-1b7f2281a894")
 		(property "Reference" "#PWR0105"
-			(at 171.45 120.65 0)
+			(at 173.99 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6233,7 +6654,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 171.45 118.11 0)
+			(at 173.99 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6241,7 +6662,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 114.3 0)
+			(at 173.99 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6250,7 +6671,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 114.3 0)
+			(at 173.99 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6259,7 +6680,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 171.45 114.3 0)
+			(at 173.99 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6306,7 +6727,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 139.192 107.95 90)
 			(effects
 				(font
@@ -6331,6 +6752,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Rating" "~20 mW"
+			(at 146.05 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -6438,7 +6867,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 124.46 89.662 90)
 			(effects
 				(font
@@ -6482,7 +6911,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 194.31 114.3 0)
+		(at 196.85 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6490,7 +6919,7 @@
 		(dnp no)
 		(uuid "a000be88-7a5c-4bdd-ad16-4c0a5d7f00d6")
 		(property "Reference" "#PWR0108"
-			(at 194.31 120.65 0)
+			(at 196.85 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6499,7 +6928,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 194.31 118.11 0)
+			(at 196.85 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6507,7 +6936,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 114.3 0)
+			(at 196.85 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6516,7 +6945,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 114.3 0)
+			(at 196.85 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6525,7 +6954,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 194.31 114.3 0)
+			(at 196.85 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6548,6 +6977,7 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 82.55 102.87 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6555,7 +6985,7 @@
 		(dnp no)
 		(uuid "a12569a7-9c20-40ea-9125-ee016c50d226")
 		(property "Reference" "RV2"
-			(at 80.01 101.5999 0)
+			(at 80.01 104.1401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6564,7 +6994,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 80.01 104.1399 0)
+			(at 80.01 101.6001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6572,7 +7002,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3006W_Horizontal"
 			(at 82.55 102.87 0)
 			(effects
 				(font
@@ -6581,7 +7011,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cz.mouser.com/datasheet/2/54/3006-1649234.pdf"
 			(at 82.55 102.87 0)
 			(effects
 				(font
@@ -6591,6 +7021,24 @@
 			)
 		)
 		(property "Description" "Potentiometer"
+			(at 82.55 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "Bourns 3006W-1-103"
+			(at 82.55 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "652-3006W-1-103"
 			(at 82.55 102.87 0)
 			(effects
 				(font
@@ -6777,77 +7225,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 97.79 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a64b61fc-f5d0-4b1a-af3b-7da15226f5e4")
-		(property "Reference" "C12"
-			(at 100.33 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 100.33 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 98.7552 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 97.79 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 97.79 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "897babf5-6f7f-4cee-bacc-eae20ac4378c")
-		)
-		(pin "2"
-			(uuid "9ce2dad1-1e9b-441c-8cc7-a230568f7dfa")
-		)
-		(instances
-			(project "LowCapacitanceProbe"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 194.31 107.95 0)
+		(at 196.85 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6855,7 +7234,7 @@
 		(dnp no)
 		(uuid "a867f62b-a298-4c81-aa4f-ff4c80c46e8e")
 		(property "Reference" "R15"
-			(at 195.834 106.68 0)
+			(at 198.374 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6864,7 +7243,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 195.834 109.22 0)
+			(at 198.374 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6872,8 +7251,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 192.532 107.95 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 195.072 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6882,7 +7261,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 194.31 107.95 0)
+			(at 196.85 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6891,7 +7270,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 194.31 107.95 0)
+			(at 196.85 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6909,73 +7288,6 @@
 			(project "LowCapacitanceProbe"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 106.68 77.47 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aeb0225b-6352-43d9-96e7-88db540fc6c4")
-		(property "Reference" "C4"
-			(at 106.68 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1u"
-			(at 106.68 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 78.4352 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 106.68 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cdbb4a4d-303e-4f55-9890-66f34a0b9b50")
-		)
-		(pin "2"
-			(uuid "bd9337c2-4e90-45fc-970f-724bb5d81752")
-		)
-		(instances
-			(project "LowCapacitanceProbe"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -7113,7 +7425,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 171.45 107.95 180)
+		(at 173.99 107.95 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7121,7 +7433,7 @@
 		(dnp yes)
 		(uuid "cee4aab2-8a8c-4298-afdb-891d3a105b14")
 		(property "Reference" "C6"
-			(at 175.26 106.68 0)
+			(at 177.8 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7130,7 +7442,7 @@
 			)
 		)
 		(property "Value" "DNP"
-			(at 175.26 109.22 0)
+			(at 177.8 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7138,8 +7450,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 170.4848 104.14 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 173.0248 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7148,7 +7460,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 171.45 107.95 0)
+			(at 173.99 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7157,7 +7469,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 171.45 107.95 0)
+			(at 173.99 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7175,6 +7487,101 @@
 			(project "LowCapacitanceProbe"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 152.4 72.39 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cfc73272-3b09-42e8-92ef-56f925761487")
+		(property "Reference" "C10"
+			(at 156.21 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 156.21 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 151.4348 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cz.mouser.com/datasheet/2/40/530l-3169674.pdf"
+			(at 152.4 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 152.4 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "530L104KT16T"
+			(at 152.4 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "581-530L104KT16T"
+			(at 152.4 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "16V"
+			(at 158.75 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a892dade-dd8d-4ba5-a56f-9bd176fb3f4d")
+		)
+		(pin "2"
+			(uuid "e815b7ec-7fe0-4e92-9bdc-fa3310091cac")
+		)
+		(instances
+			(project "LowCapacitanceProbe"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -7335,7 +7742,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 106.68 74.168 90)
 			(effects
 				(font
@@ -7404,7 +7811,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 84.328 110.49 90)
 			(effects
 				(font
@@ -7441,110 +7848,6 @@
 			(project "LowCapacitanceProbe"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 113.03 38.1 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d9cf2d61-3126-40fe-a66d-ae5145f94be8")
-		(property "Reference" "C1"
-			(at 115.57 36.5949 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10uF"
-			(at 115.57 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 112.0648 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 113.03 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "voltage" "10V"
-			(at 116.84 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "GRM155R61A106ME44D"
-			(at 113.03 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OC_LCSC" "C77000"
-			(at 113.03 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C77000"
-			(at 113.03 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9d76dfc-52ba-46de-beb4-dab7b94ee663")
-		)
-		(pin "2"
-			(uuid "6762c669-2824-49a2-8bd4-3f19091dd75a")
-		)
-		(instances
-			(project "FETProbe_v2"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -7640,7 +7943,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 124.46 74.168 90)
 			(effects
 				(font
@@ -7690,10 +7993,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e29d0bf9-57ab-4859-aa16-a5dee316bebd")
 		(property "Reference" "R6"
-			(at 102.87 42.545 0)
+			(at 102.87 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7702,7 +8004,7 @@
 			)
 		)
 		(property "Value" "12k"
-			(at 102.87 45.085 0)
+			(at 102.87 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7710,7 +8012,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 100.33 43.18 0)
 			(effects
 				(font
@@ -7737,58 +8039,12 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0402FR-0712KL"
-			(at 100.33 43.18 0)
+		(property "Tolerance" "1%"
+			(at 104.14 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "OC_LCSC" "C114760"
-			(at 100.33 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "comment" "general purpose"
-			(at 100.33 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "dielectric" "1%"
-			(at 100.33 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C114760"
-			(at 100.33 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC alternative" "C413095"
-			(at 100.33 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7807,8 +8063,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 163.83 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3f210a5-b2f9-4664-9089-e7f4dfae77f2")
+		(property "Reference" "C5"
+			(at 163.83 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 163.83 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 160.02 102.5652 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cz.mouser.com/datasheet/2/40/530l-3169674.pdf"
+			(at 163.83 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 163.83 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "530L104KT16T"
+			(at 163.83 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "581-530L104KT16T"
+			(at 163.83 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "16V"
+			(at 163.83 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d35207d-0e46-41d5-b0b4-fd444b8ca34f")
+		)
+		(pin "2"
+			(uuid "7a234367-4e43-49dd-bead-e777dae2e876")
+		)
+		(instances
+			(project "LowCapacitanceProbe"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 184.15 114.3 0)
+		(at 186.69 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7816,7 +8166,7 @@
 		(dnp no)
 		(uuid "e4504518-96e7-4c9e-8457-7273f5a490f1")
 		(property "Reference" "#PWR0106"
-			(at 184.15 120.65 0)
+			(at 186.69 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7825,7 +8175,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 184.15 118.11 0)
+			(at 186.69 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7833,7 +8183,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 114.3 0)
+			(at 186.69 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7842,7 +8192,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 114.3 0)
+			(at 186.69 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7851,7 +8201,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 114.3 0)
+			(at 186.69 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7872,6 +8222,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 97.79 110.49 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "edfe295d-8b7b-4a07-84b4-82aa58411f28")
+		(property "Reference" "C12"
+			(at 100.33 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 100.33 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 96.8248 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cz.mouser.com/datasheet/2/40/530l-3169674.pdf"
+			(at 97.79 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 97.79 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "530L104KT16T"
+			(at 97.79 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "581-530L104KT16T"
+			(at 97.79 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "16V"
+			(at 102.87 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a1bf859b-d49b-4f31-a842-0abb5874250a")
+		)
+		(pin "2"
+			(uuid "4656749f-e3ea-40ee-a74f-f7c258069421")
+		)
+		(instances
+			(project "LowCapacitanceProbe"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 100.33 35.56 0)
 		(unit 1)
@@ -7879,7 +8324,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ee8557ea-6f3d-4eba-a056-447e35cb4428")
 		(property "Reference" "R5"
 			(at 102.87 34.2899 0)
@@ -7899,7 +8343,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 100.33 35.56 0)
 			(effects
 				(font
@@ -7926,49 +8370,12 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0402FR-0727KL"
-			(at 100.33 35.56 0)
+		(property "Tolerance" "1%"
+			(at 104.14 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "OC_LCSC" "C138022"
-			(at 100.33 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "comment" "general purpose"
-			(at 100.33 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "dielectric" "1%"
-			(at 100.33 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C138022"
-			(at 100.33 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8056,7 +8463,7 @@
 		(at 71.12 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -8077,7 +8484,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Horizontal"
 			(at 71.12 86.36 0)
 			(effects
 				(font
@@ -8095,7 +8502,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "A needle broken off a pogo pin soldered to a pad"
 			(at 71.12 91.44 0)
 			(effects
 				(font
@@ -8183,7 +8590,7 @@
 	)
 	(symbol
 		(lib_id "petr:u.FL")
-		(at 205.74 101.6 0)
+		(at 208.28 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8192,7 +8599,7 @@
 		(fields_autoplaced yes)
 		(uuid "fe96f865-ed9d-422f-b7b8-3614592115b5")
 		(property "Reference" "J2"
-			(at 209.55 100.6231 0)
+			(at 212.09 100.6231 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8201,7 +8608,7 @@
 			)
 		)
 		(property "Value" "u.FL"
-			(at 209.55 103.1631 0)
+			(at 212.09 103.1631 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8210,7 +8617,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical"
-			(at 205.74 101.6 0)
+			(at 208.28 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8219,7 +8626,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 101.6 0)
+			(at 208.28 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8228,7 +8635,7 @@
 			)
 		)
 		(property "Description" "coaxial connector"
-			(at 205.74 101.6 0)
+			(at 208.28 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8306,7 +8713,7 @@
 			)
 		)
 		(property "voltage" "6V3"
-			(at 132.08 41.91 0)
+			(at 133.35 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8322,16 +8729,7 @@
 				(hide yes)
 			)
 		)
-		(property "OC_LCSC" "C2158564"
-			(at 127 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C2158564"
+		(property "Mouser" "74-T55A107M6R3C0045"
 			(at 127 38.1 0)
 			(effects
 				(font
