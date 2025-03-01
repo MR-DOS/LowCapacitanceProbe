@@ -2580,7 +2580,7 @@
 		)
 		(uuid "65f6e093-fc78-4c15-95e2-caf4618ff97b")
 	)
-	(text "Calibration process:\n1) Perform this calibration in ESD safe environment!\n   Short the input, power up the probe (with VNA disconnected).\n   Not shorting the input may affect the measurement.\n2) Connect VNA, measure output impedance of the probe.\n   Tune the bias on gate 2 to get 50 Ohm output.\n3) Disconnect VNA, reconnect it to measure S21 of the probe.\n   (If varicap tuning is assembled, set it to highest possible voltage.)\n   Tune the input capacitor to get 10:1 (-20 dB) response.\n4) (If assembled, use the varicap tuning to fine-tune the gain).\n   If varicap tuning is not used, change bias to fine-tune gain.\n5) Re-measure the output impedance. If out of spec, repeat these steps.\n   This is needed because the parameters are not fully independent.\n   \nNotes:\n1) If desired gain cannot be achieved, change C3.\n2) If output impedance cannot be achieved, change R10.\n3) If varicap tuning is too narrow/broad, change C11.\n   Too large C11 or too steep D1 can introduce non-linearity.\n4) R11, R12 and R18 delinearise the trimmers to make tuning easier.\n5) Trimmer C9 has screw connected to input to make tuning easier.\n   (The input is low impedance source, net after the capacitor is not.)\n6) For tuning C9, use low capacitance isolated tuning screwdriver.\n   Never tune the probe when connected to dangerous voltages!\n7) In case of bad low bandwidth, change L1.\n8) In case of instability, notches and peaks at > 500 MHz, change R7-9.\n9) Clockwise rotation of trimmers increases gain / drain current.\n\nCritical components have MPNs assigned, except for BF998 (look on eBay).\nBF998 with MOW marking may be fake, genuine are MOs or MOp :-)\nMOP with a bar above \"p\" has reversed footprint!\n\nThis probe is nonlinear, distortion increases with measured amplitude.\nAbov 50 Vp-p, distortion may increase due to protective diodes on G2.\n\nThe whole PCB shall be shielded, ideally by a 3D printed cover which\nwould be either covered by copper tape or coated with carbon and\ngalvanized with copper."
+	(text "Calibration process:\n1) Perform this calibration in ESD safe environment!\n   Short the input, power up the probe (with VNA disconnected).\n   Not shorting the input may affect the measurement.\n2) Connect VNA, measure output impedance of the probe.\n   Tune the bias on gate 2 to get 50 Ohm output.\n3) Disconnect VNA, reconnect it to measure S21 of the probe.\n   (If varicap tuning is assembled, set it to highest possible voltage.)\n   Tune the input capacitor to get 10:1 (-20 dB) response.\n4) (If assembled, use the varicap tuning to fine-tune the gain).\n   If varicap tuning is not used, change bias to fine-tune gain.\n5) Re-measure the output impedance. If out of spec, repeat these steps.\n   This is needed because the parameters are not fully independent.\n   \nNotes:\n1) If desired gain cannot be achieved, change C3.\n2) If output impedance cannot be achieved, change R10.\n3) If varicap tuning is too narrow/broad, change C11.\n   Too large C11 or too steep D1 can introduce non-linearity.\n4) R11, R12 and R18 delinearise the trimmers to make tuning easier.\n5) Trimmer C9 has screw connected to input to make tuning easier.\n   (The input is low impedance source, net after the capacitor is not.)\n6) For tuning C9, use low capacitance isolated tuning screwdriver.\n   Never tune the probe when connected to dangerous voltages!\n7) In case of bad low bandwidth, change L1.\n8) In case of instability, notches and peaks at > 500 MHz, change R7-9.\n9) Clockwise rotation of trimmers increases gain / drain current.\n\nCritical components have MPNs assigned, except for BF998 (look on eBay).\nBF998 with MOW marking may be fake, genuine are MOs or MOp :-)\nMOP with a bar above \"p\" has reversed footprint!\n\nThis probe is nonlinear, distortion increases with measured amplitude.\nAbov 50 Vp-p, distortion may increase due to protective diodes on G2.\n\nThe whole PCB shall be shielded, ideally by a 3D printed cover which\nwould be either covered by copper tape or coated with carbon and\ngalvanized with copper.\n\nTuning range should be about 2.5 dB using C9 and 1 dB using D1.\n\nMost low frequency noise will probably come from thermal noise of R14."
 		(exclude_from_sim no)
 		(at 209.55 13.97 0)
 		(effects
@@ -2726,6 +2726,12 @@
 		(uuid "d008af63-8957-49b6-bf1a-33e8676972d4")
 	)
 	(junction
+		(at 176.53 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d543690e-38db-438d-a457-b4461e81856f")
+	)
+	(junction
 		(at 210.82 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2862,6 +2868,16 @@
 			(type default)
 		)
 		(uuid "21d6fb11-de54-427c-9a3c-64e4a13d85d3")
+	)
+	(wire
+		(pts
+			(xy 189.23 102.87) (xy 189.23 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a72e69b-d2da-4759-a416-73f90d4a26b9")
 	)
 	(wire
 		(pts
@@ -3035,6 +3051,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 92.71) (xy 189.23 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65494170-4259-4de9-a93b-3783ae35b58a")
+	)
+	(wire
+		(pts
 			(xy 165.1 58.42) (xy 151.13 58.42)
 		)
 		(stroke
@@ -3152,6 +3178,16 @@
 			(type default)
 		)
 		(uuid "90ab37f0-318e-4ef6-a721-ab268a867c44")
+	)
+	(wire
+		(pts
+			(xy 189.23 95.25) (xy 189.23 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92b0b45f-3e58-466c-bf70-beb9bb0ea7c4")
 	)
 	(wire
 		(pts
@@ -3652,6 +3688,16 @@
 			(justify left bottom)
 		)
 		(uuid "c68c3105-61a6-42fa-b6e8-aad066c3f8b8")
+	)
+	(label "POWER"
+		(at 102.87 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c89eb472-7f5a-45ee-8472-02b595ede6a7")
 	)
 	(label "+5V"
 		(at 128.27 58.42 0)
@@ -5366,6 +5412,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 189.23 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "78f4f86c-6d15-4cd6-87d3-ffccff85f82d")
+		(property "Reference" "#PWR0116"
+			(at 189.23 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.23 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5c48832-756d-4cbf-8848-0ebd5770bbd1")
+		)
+		(instances
+			(project "LowCapacitanceProbe"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR0116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 124.46 55.88 0)
 		(unit 1)
@@ -6779,6 +6890,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 189.23 99.06 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b23da44d-9465-4738-a333-cc20bca5693e")
+		(property "Reference" "C14"
+			(at 193.04 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 193.04 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 188.2648 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cz.mouser.com/datasheet/2/40/530l-3169674.pdf"
+			(at 189.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 189.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "530L104KT16T"
+			(at 189.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "581-530L104KT16T"
+			(at 189.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "16V"
+			(at 195.58 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e84990d0-2314-4f27-8cef-e20a96e30b7f")
+		)
+		(pin "2"
+			(uuid "95d8dcc8-28ff-43e0-a99c-b7fc60a49ddd")
+		)
+		(instances
+			(project "LowCapacitanceProbe"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 109.22 140.97 0)
 		(unit 1)
@@ -7333,71 +7539,6 @@
 			(project "LowCapacitanceProbe"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 102.87 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "da963ebf-cebf-4097-9c4d-17f76347c59a")
-		(property "Reference" "#PWR09"
-			(at 102.87 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 102.87 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 102.87 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a70eb17-5980-4e0d-a753-1ce42106109b")
-		)
-		(instances
-			(project "LowCapacitanceProbe"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)

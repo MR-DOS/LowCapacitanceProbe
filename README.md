@@ -1,11 +1,12 @@
 # LowCapacitanceProbe
 1+ GHz AC Probe with low input capacitance (no more than 1 pF, hopefully)
 
-2 dB flatness should be approx. 1.6 GHz, 6 dB flatness should be about 2.1 GHz, 6 dB flatness should be about 3.3 GHz. Design needs to be verified in reality (simulation is likely over-optimistic). In-band flatness should be better than 0.2 dB. Lower 6 dB corner should be at about 30 kHz while 3 dB corner is at about 50 kHz.
+2 dB flatness should be approx. 1.6 GHz, 3 dB flatness should be about 2.1 GHz, 6 dB flatness should be about 3.3 GHz. Design needs to be verified in reality (simulation is likely over-optimistic). In-band flatness should be better than 0.2 dB. Lower 6 dB corner should be at about 30 kHz while 3 dB corner is at about 50 kHz.
 
 ## Sources for this design
 
 Forked from FETProbe_V2 by makerprobe which is an improved fork of crteensy's FETProbe_tiny.
+
 https://github.com/makerprobe/FETProbe_V2
 
 https://github.com/crteensy/FETProbe_tiny
