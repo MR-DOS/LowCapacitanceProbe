@@ -1540,133 +1540,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0.762 0.508 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Small_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Diode:PMEG4020ER"
 			(pin_numbers
 				(hide yes)
@@ -1816,7 +1689,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:SPX3819M5-L"
+		(symbol "Regulator_Linear:SPX3819M5-L-5-0"
 			(pin_names
 				(offset 0.254)
 			)
@@ -1831,7 +1704,7 @@
 					)
 				)
 			)
-			(property "Value" "SPX3819M5-L"
+			(property "Value" "SPX3819M5-L-5-0"
 				(at 0 5.715 0)
 				(effects
 					(font
@@ -1858,7 +1731,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "500mA Low drop-out regulator, Adjustable, SOT-23-5"
+			(property "Description" "500mA Low drop-out regulator, Fixed Output 5.0V, SOT-23-5"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1867,7 +1740,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "REGULATOR LDO ADJ"
+			(property "ki_keywords" "REGULATOR LDO 5.0V"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1885,7 +1758,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "SPX3819M5-L_0_1"
+			(symbol "SPX3819M5-L-5-0_0_1"
 				(rectangle
 					(start -5.08 4.445)
 					(end 5.08 -5.08)
@@ -1898,7 +1771,7 @@
 					)
 				)
 			)
-			(symbol "SPX3819M5-L_1_1"
+			(symbol "SPX3819M5-L-5-0_1_1"
 				(pin power_in line
 					(at -7.62 2.54 0)
 					(length 2.54)
@@ -1972,9 +1845,9 @@
 					)
 				)
 				(pin input line
-					(at 7.62 -2.54 180)
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "ADJ"
+					(name "BP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2707,17 +2580,6 @@
 		)
 		(uuid "65f6e093-fc78-4c15-95e2-caf4618ff97b")
 	)
-	(text "Vout = 1.235 V*(1+R5/R6)\nR6 > 10k\nVout = 4.94 V"
-		(exclude_from_sim no)
-		(at 101.6 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "72fca28a-311e-4210-ab48-5d1466c2bd4b")
-	)
 	(text "Calibration process:\n1) Perform this calibration in ESD safe environment!\n   Short the input, power up the probe (with VNA disconnected).\n   Not shorting the input may affect the measurement.\n2) Connect VNA, measure output impedance of the probe.\n   Tune the bias on gate 2 to get 50 Ohm output.\n3) Disconnect VNA, reconnect it to measure S21 of the probe.\n   (If varicap tuning is assembled, set it to highest possible voltage.)\n   Tune the input capacitor to get 10:1 (-20 dB) response.\n4) (If assembled, use the varicap tuning to fine-tune the gain).\n   If varicap tuning is not used, change bias to fine-tune gain.\n5) Re-measure the output impedance. If out of spec, repeat these steps.\n   This is needed because the parameters are not fully independent.\n   \nNotes:\n1) If desired gain cannot be achieved, change C3.\n2) If output impedance cannot be achieved, change R10.\n3) If varicap tuning is too narrow/broad, change C11.\n   Too large C11 or too steep D1 can introduce non-linearity.\n4) R11, R12 and R18 delinearise the trimmers to make tuning easier.\n5) Trimmer C9 has screw connected to input to make tuning easier.\n   (The input is low impedance source, net after the capacitor is not.)\n6) For tuning C9, use low capacitance isolated tuning screwdriver.\n   Never tune the probe when connected to dangerous voltages!\n7) In case of bad low bandwidth, change L1.\n8) In case of instability, notches and peaks at > 500 MHz, change R7-9.\n9) Clockwise rotation of trimmers increases gain / drain current.\n\nCritical components have MPNs assigned, except for BF998 (look on eBay).\nBF998 with MOW marking may be fake, genuine are MOs or MOp :-)\nMOP with a bar above \"p\" has reversed footprint!\n\nThis probe is nonlinear, distortion increases with measured amplitude.\nAbov 50 Vp-p, distortion may increase due to protective diodes on G2."
 		(exclude_from_sim no)
 		(at 209.55 13.97 0)
@@ -2753,7 +2615,7 @@
 	)
 	(text "6 ... 16 V"
 		(exclude_from_sim no)
-		(at 66.04 53.34 0)
+		(at 63.5 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2796,12 +2658,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "66c1bafd-4451-4cc7-9b42-7e7e9b2ae372")
-	)
-	(junction
-		(at 124.46 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "77e68b8a-7d11-4dd1-8e18-ece43a2994cd")
 	)
 	(junction
 		(at 139.7 129.54)
@@ -3039,6 +2895,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 58.42) (xy 92.71 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fb0d7ec-7a0c-4e7c-b080-51801acd46b7")
+	)
+	(wire
+		(pts
 			(xy 208.28 128.27) (xy 210.82 128.27)
 		)
 		(stroke
@@ -3069,7 +2935,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 58.42) (xy 92.71 58.42)
+			(xy 80.01 58.42) (xy 82.55 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3166,16 +3032,6 @@
 			(type default)
 		)
 		(uuid "5e755161-24a5-4650-a6e3-9836bf074412")
-	)
-	(wire
-		(pts
-			(xy 120.65 63.5) (xy 120.65 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65783c65-716a-454c-b9fe-44bf465b4eed")
 	)
 	(wire
 		(pts
@@ -3289,6 +3145,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 60.96) (xy 124.46 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90ab37f0-318e-4ef6-a721-ab268a867c44")
+	)
+	(wire
+		(pts
 			(xy 113.03 129.54) (xy 121.92 129.54)
 		)
 		(stroke
@@ -3309,23 +3175,13 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 68.58) (xy 66.04 63.5)
+			(xy 63.5 68.58) (xy 63.5 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a176ee5d-4b0c-4c90-b089-47ba6c4977d1")
-	)
-	(wire
-		(pts
-			(xy 124.46 64.77) (xy 124.46 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a200f0d2-7294-44ff-ac6f-329a93c192f3")
 	)
 	(wire
 		(pts
@@ -3369,23 +3225,13 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 58.42) (xy 77.47 58.42)
+			(xy 68.58 58.42) (xy 72.39 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b3661e29-147b-4c86-8e58-9ab321c37700")
-	)
-	(wire
-		(pts
-			(xy 119.38 63.5) (xy 120.65 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4e2adfb-dae1-460f-a017-fc1fe14b653b")
 	)
 	(wire
 		(pts
@@ -3446,16 +3292,6 @@
 			(type default)
 		)
 		(uuid "bf46ba10-b88b-4bbe-a804-83ca7e9ae966")
-	)
-	(wire
-		(pts
-			(xy 124.46 59.69) (xy 124.46 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0f49732-5ef6-49ec-b674-f8c338e672a3")
 	)
 	(wire
 		(pts
@@ -3559,16 +3395,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 67.31) (xy 124.46 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2f0c777-5fdd-4860-b8c2-b0f3842c2b34")
-	)
-	(wire
-		(pts
 			(xy 121.92 104.14) (xy 121.92 106.68)
 		)
 		(stroke
@@ -3636,16 +3462,6 @@
 			(type default)
 		)
 		(uuid "ee4dc447-7bd2-478c-ad4e-5704844bf094")
-	)
-	(wire
-		(pts
-			(xy 120.65 66.04) (xy 124.46 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eea3c6ec-0ab2-4f88-89ec-dd2a692f9ef8")
 	)
 	(wire
 		(pts
@@ -4808,7 +4624,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 66.04 58.42 0)
+		(at 63.5 58.42 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4817,7 +4633,7 @@
 		(dnp no)
 		(uuid "52039751-7c90-4bad-b446-00e9c6094980")
 		(property "Reference" "J1"
-			(at 63.5 59.055 0)
+			(at 60.96 59.055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4826,7 +4642,7 @@
 			)
 		)
 		(property "Value" "u.Fl"
-			(at 63.5 61.3664 0)
+			(at 60.96 61.3664 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4835,7 +4651,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical"
-			(at 66.04 58.42 0)
+			(at 63.5 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4844,7 +4660,7 @@
 			)
 		)
 		(property "Datasheet" " ~"
-			(at 66.04 58.42 0)
+			(at 63.5 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4853,7 +4669,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 58.42 0)
+			(at 63.5 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4862,7 +4678,7 @@
 			)
 		)
 		(property "MPN" "CONMHF1-SMD-G-T"
-			(at 66.04 58.42 0)
+			(at 63.5 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4871,7 +4687,7 @@
 			)
 		)
 		(property "LCSC Part" "C5137195"
-			(at 66.04 58.42 0)
+			(at 63.5 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4963,7 +4779,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 72.39 0)
+		(at 124.46 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4971,7 +4787,7 @@
 		(dnp no)
 		(uuid "5dcce034-c88a-43ed-b48f-7acde4d1c983")
 		(property "Reference" "#PWR07"
-			(at 124.46 78.74 0)
+			(at 124.46 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4980,7 +4796,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 76.2 0)
+			(at 124.46 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4988,7 +4804,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 72.39 0)
+			(at 124.46 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4997,7 +4813,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 72.39 0)
+			(at 124.46 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5006,7 +4822,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 72.39 0)
+			(at 124.46 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5182,7 +4998,7 @@
 	)
 	(symbol
 		(lib_id "Diode:PMEG4020ER")
-		(at 81.28 58.42 180)
+		(at 76.2 58.42 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5191,7 +5007,7 @@
 		(fields_autoplaced yes)
 		(uuid "6fc96a1f-e4cb-4e94-9cfd-14957774a5f2")
 		(property "Reference" "D3"
-			(at 81.5975 52.07 0)
+			(at 76.5175 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5199,7 +5015,7 @@
 			)
 		)
 		(property "Value" "PMEG4020ER"
-			(at 81.5975 54.61 0)
+			(at 76.5175 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5207,7 +5023,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
-			(at 81.28 53.975 0)
+			(at 76.2 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5216,7 +5032,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG4020ER.pdf"
-			(at 81.28 58.42 0)
+			(at 76.2 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5225,7 +5041,7 @@
 			)
 		)
 		(property "Description" "40V, 2A low Vf MEGA Schottky barrier rectifier, SOD-123W"
-			(at 81.28 58.42 0)
+			(at 76.2 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5234,7 +5050,7 @@
 			)
 		)
 		(property "MPN" "PMEG4020ER,115"
-			(at 81.28 58.42 0)
+			(at 76.2 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5243,7 +5059,7 @@
 			)
 		)
 		(property "Mouser" "771-PMEG4020ER115"
-			(at 81.28 58.42 0)
+			(at 76.2 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5261,101 +5077,6 @@
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:SPX3819M5-L")
-		(at 111.76 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "70b45a8e-73e2-4b95-acf1-712e94a1f9be")
-		(property "Reference" "U1"
-			(at 111.76 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SPX3819M5-L"
-			(at 111.76 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 111.76 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.exar.com/content/document.ashx?id=22106&languageid=1033&type=Datasheet&partnumber=SPX3819&filename=SPX3819.pdf&part=SPX3819"
-			(at 111.76 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low noise LDO"
-			(at 111.76 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SPX3819M5-L/TR"
-			(at 111.76 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "701-SPX3819M5-L/TR"
-			(at 111.76 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "50af4fba-8b6c-4e80-94a0-5e5a7a536ab1")
-		)
-		(pin "2"
-			(uuid "99df6dd0-5b43-4b69-b66c-6a723646c368")
-		)
-		(pin "3"
-			(uuid "ed0bce7d-fff7-405b-9eed-87cd6243ad0e")
-		)
-		(pin "4"
-			(uuid "3c6ca2ef-4a19-43d2-8168-4b84ba1c479e")
-		)
-		(pin "5"
-			(uuid "322b3013-2f75-4124-96bb-7330acbdbcbf")
-		)
-		(instances
-			(project "FETProbe_v2"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -5981,6 +5702,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:SPX3819M5-L-5-0")
+		(at 111.76 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "950efbb9-bda2-442d-80f4-4456b60ba82a")
+		(property "Reference" "U2"
+			(at 111.76 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPX3819M5-L-5-0"
+			(at 111.76 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 111.76 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.exar.com/content/document.ashx?id=22106&languageid=1033&type=Datasheet&partnumber=SPX3819&filename=SPX3819.pdf&part=SPX3819"
+			(at 111.76 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "500mA Low drop-out regulator, Fixed Output 5.0V, SOT-23-5"
+			(at 111.76 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SPX3819M5-L-5-0/TR"
+			(at 111.76 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "701-SPX3819M5-L-50TR"
+			(at 111.76 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "757b853e-cbfa-4c30-8fa7-8fd4fd7548ed")
+		)
+		(pin "4"
+			(uuid "e833cdaf-eaf1-4411-8d92-358a4d5ba0c2")
+		)
+		(pin "2"
+			(uuid "a32ea287-c71f-4ef1-80fa-ae481830dece")
+		)
+		(pin "1"
+			(uuid "560ed8dc-3eb2-4c26-bbe2-b541e88e4201")
+		)
+		(pin "5"
+			(uuid "b4c2980f-d971-457d-976a-6b81b0ba01f2")
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Capacitance")
 		(at 139.7 137.16 270)
 		(unit 1)
@@ -6128,6 +5944,74 @@
 			(project "FETProbe_v2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 86.36 58.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "989f7ebe-25c1-4d8d-bf9a-8001e539b82c")
+		(property "Reference" "R20"
+			(at 86.36 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10"
+			(at 86.36 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 86.36 60.198 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 86.36 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f3aa2c11-7814-44d8-8be9-0ac6b94c1e65")
+		)
+		(pin "1"
+			(uuid "336770b6-81fb-4dc9-9b26-b720bfb02e8e")
+		)
+		(instances
+			(project "LowCapacitanceProbe"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -6692,6 +6576,83 @@
 			(project "LowCapacitanceProbe"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 124.46 64.77 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "adfbe4f5-d0e8-4f06-bfda-222c438639da")
+		(property "Reference" "C13"
+			(at 127 63.2649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 127 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 123.4948 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "voltage" "25V"
+			(at 129.54 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "57288fad-1593-42ed-beb7-4f004d90996a")
+		)
+		(pin "2"
+			(uuid "f069efea-f01b-42e4-b4bd-8f1d236fce20")
+		)
+		(instances
+			(project "LowCapacitanceProbe"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -7390,83 +7351,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 124.46 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e29d0bf9-57ab-4859-aa16-a5dee316bebd")
-		(property "Reference" "R6"
-			(at 127 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "12k"
-			(at 127 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 124.46 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1%"
-			(at 128.27 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8c16d510-f052-4a9e-9dec-6aa6ff408974")
-		)
-		(pin "2"
-			(uuid "449131d8-849c-444e-8e41-cecabebb66bd")
-		)
-		(instances
-			(project "FETProbe_v2"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 187.96 128.27 270)
 		(unit 1)
@@ -7721,85 +7605,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 124.46 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ee8557ea-6f3d-4eba-a056-447e35cb4428")
-		(property "Reference" "R5"
-			(at 127 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "36k"
-			(at 127 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 124.46 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1%"
-			(at 128.27 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9393a542-204d-4779-96ce-8ac7df2f8867")
-		)
-		(pin "2"
-			(uuid "d63a8e76-ede4-4618-83a4-3cefb9164075")
-		)
-		(instances
-			(project "FETProbe_v2"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 66.04 68.58 0)
+		(at 63.5 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7807,7 +7614,7 @@
 		(dnp no)
 		(uuid "f231041b-336c-4b9b-9f86-123f9dc12d97")
 		(property "Reference" "#PWR01"
-			(at 66.04 74.93 0)
+			(at 63.5 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7816,7 +7623,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 66.167 72.9742 0)
+			(at 63.5 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7824,7 +7631,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 68.58 0)
+			(at 63.5 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7833,7 +7640,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 68.58 0)
+			(at 63.5 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7842,7 +7649,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 68.58 0)
+			(at 63.5 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
