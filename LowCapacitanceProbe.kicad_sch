@@ -5,6 +5,194 @@
 	(uuid "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55")
 	(paper "A4")
 	(lib_symbols
+		(symbol "7792:7792"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "7792"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "7792"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p69.pdf"
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Terminals M4 Screw terminal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "10.1"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "534-7792"
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/7792?qs=%2F%252BPMR94VuMYaltz9s0CUIQ%3D%3D"
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Keystone Electronics"
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "7792"
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "7792_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_Coaxial"
 			(pin_names
 				(offset 1.016)
@@ -165,143 +353,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Connector:Screw_Terminal_01x01"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Screw_Terminal_01x01"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "screw terminal"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TerminalBlock*:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Screw_Terminal_01x01_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 0.508) (xy 0.508 -0.3302)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2752,13 +2803,23 @@
 	)
 	(text "6 ... 16 V"
 		(exclude_from_sim no)
-		(at 63.5 53.34 0)
+		(at 62.23 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "ec336121-12a6-44f4-a528-964103c49a8d")
+	)
+	(text "The PCBite holder has M4 screw and external diameter of 13 mm."
+		(exclude_from_sim no)
+		(at 87.63 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f5d8c9d1-cf00-4f01-bf50-a61ad0cfb4d0")
 	)
 	(junction
 		(at 138.43 118.11)
@@ -2815,7 +2876,7 @@
 		(uuid "8bd654a2-9686-48a4-9739-bf71b032490d")
 	)
 	(junction
-		(at 124.46 58.42)
+		(at 123.19 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8cc6c7e3-20c3-4d9c-a083-ed89cdfb3a23")
@@ -2833,7 +2894,7 @@
 		(uuid "981ff4de-0330-4757-b746-0cb983df5e7c")
 	)
 	(junction
-		(at 92.71 58.42)
+		(at 91.44 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a65ca40-d10d-4188-be59-1ed76474d65d")
@@ -2845,7 +2906,7 @@
 		(uuid "a8d345a2-1b19-481d-963c-539463ee4659")
 	)
 	(junction
-		(at 102.87 58.42)
+		(at 101.6 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa8c2759-1c06-4d20-8e29-4306a6503fc1")
@@ -2886,9 +2947,25 @@
 		(color 0 0 0 0)
 		(uuid "fa715c6e-70ea-423a-9442-f6bd468c0c5c")
 	)
+	(no_connect
+		(at 93.98 161.29)
+		(uuid "00beb17c-1e9d-43a9-b62d-d6cffe4a39f7")
+	)
+	(no_connect
+		(at 93.98 158.75)
+		(uuid "4e514337-8e93-4742-8499-9dfab2d83c1f")
+	)
+	(no_connect
+		(at 73.66 158.75)
+		(uuid "c2b052d0-d348-48de-b7cb-59c6531c511b")
+	)
+	(no_connect
+		(at 73.66 161.29)
+		(uuid "dcd8d09d-fbdc-43af-82b0-e5cfd69973ee")
+	)
 	(wire
 		(pts
-			(xy 92.71 58.42) (xy 92.71 60.96)
+			(xy 91.44 58.42) (xy 91.44 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2998,7 +3075,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 55.88) (xy 124.46 58.42)
+			(xy 123.19 55.88) (xy 123.19 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3048,7 +3125,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 58.42) (xy 92.71 58.42)
+			(xy 88.9 58.42) (xy 91.44 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3088,7 +3165,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 58.42) (xy 82.55 58.42)
+			(xy 78.74 58.42) (xy 81.28 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3118,7 +3195,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 58.42) (xy 124.46 58.42)
+			(xy 118.11 58.42) (xy 123.19 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3158,7 +3235,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 58.42) (xy 102.87 60.96)
+			(xy 101.6 58.42) (xy 101.6 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3268,7 +3345,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 58.42) (xy 137.16 58.42)
+			(xy 123.19 58.42) (xy 137.16 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3308,7 +3385,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 60.96) (xy 124.46 60.96)
+			(xy 118.11 60.96) (xy 123.19 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3348,7 +3425,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 68.58) (xy 63.5 63.5)
+			(xy 62.23 68.58) (xy 62.23 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3398,7 +3475,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 58.42) (xy 72.39 58.42)
+			(xy 67.31 58.42) (xy 71.12 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3408,7 +3485,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 58.42) (xy 104.14 58.42)
+			(xy 101.6 58.42) (xy 102.87 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3438,7 +3515,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 60.96) (xy 102.87 60.96)
+			(xy 102.87 60.96) (xy 101.6 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3548,7 +3625,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 58.42) (xy 102.87 58.42)
+			(xy 91.44 58.42) (xy 101.6 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3707,7 +3784,7 @@
 		(uuid "1db1b194-e746-41f4-a926-ec12b2b16882")
 	)
 	(label "PIN_FILT"
-		(at 93.98 58.42 0)
+		(at 92.71 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3737,7 +3814,7 @@
 		(uuid "2a3332f2-5b77-4c5e-8012-dc066c24d2ef")
 	)
 	(label "PIN"
-		(at 68.58 58.42 0)
+		(at 67.31 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3767,7 +3844,7 @@
 		(uuid "654a5b89-dc4a-4449-b666-94ddbaf29add")
 	)
 	(label "BYPASS"
-		(at 119.38 60.96 0)
+		(at 118.11 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3848,7 +3925,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 92.71 64.77 180)
+		(at 91.44 64.77 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3856,7 +3933,7 @@
 		(dnp no)
 		(uuid "0047442b-fbd8-450b-afc5-a62cac7beac9")
 		(property "Reference" "C2"
-			(at 95.25 63.2649 0)
+			(at 93.98 63.2649 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3865,7 +3942,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 95.25 66.04 0)
+			(at 93.98 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3874,7 +3951,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 91.7448 60.96 0)
+			(at 90.4748 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3883,7 +3960,7 @@
 			)
 		)
 		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL31A106MBHNNN.do"
-			(at 92.71 64.77 0)
+			(at 91.44 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3892,7 +3969,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.71 64.77 0)
+			(at 91.44 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3901,7 +3978,7 @@
 			)
 		)
 		(property "voltage" "50 V"
-			(at 97.79 68.58 0)
+			(at 96.52 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3909,7 +3986,7 @@
 			)
 		)
 		(property "MPN" "CL31A106MBHNNNE"
-			(at 92.71 64.77 0)
+			(at 91.44 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3918,7 +3995,7 @@
 			)
 		)
 		(property "Mouser" "187-CL31A106MBHNNNE"
-			(at 92.71 64.77 0)
+			(at 91.44 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4123,7 +4200,7 @@
 				)
 			)
 		)
-		(property "Value" "0R"
+		(property "Value" "0"
 			(at 177.8 123.698 90)
 			(effects
 				(font
@@ -4579,73 +4656,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x01")
-		(at 82.55 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "35524645-39d5-4c63-a11b-24cdef3e7431")
-		(property "Reference" "J3"
-			(at 85.09 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x01"
-			(at 85.09 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 82.55 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c2c49138-1b1c-4c19-a239-8cd17e9dcaf6")
-		)
-		(instances
-			(project ""
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 232.41 140.97 0)
 		(unit 1)
@@ -4795,7 +4805,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 92.71 68.58 0)
+		(at 91.44 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4803,7 +4813,7 @@
 		(dnp no)
 		(uuid "4be82219-a5a8-457b-b5b1-b25ac5d52c8a")
 		(property "Reference" "#PWR05"
-			(at 92.71 74.93 0)
+			(at 91.44 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4812,7 +4822,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.71 72.39 0)
+			(at 91.44 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4820,7 +4830,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 68.58 0)
+			(at 91.44 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4829,7 +4839,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 68.58 0)
+			(at 91.44 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4838,7 +4848,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.71 68.58 0)
+			(at 91.44 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4994,7 +5004,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 63.5 58.42 0)
+		(at 62.23 58.42 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5003,7 +5013,7 @@
 		(dnp no)
 		(uuid "52039751-7c90-4bad-b446-00e9c6094980")
 		(property "Reference" "J1"
-			(at 60.96 59.055 0)
+			(at 59.69 59.055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5012,7 +5022,7 @@
 			)
 		)
 		(property "Value" "u.Fl"
-			(at 60.96 61.3664 0)
+			(at 59.69 61.3664 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5021,7 +5031,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical"
-			(at 63.5 58.42 0)
+			(at 62.23 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5029,8 +5039,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" " ~"
-			(at 63.5 58.42 0)
+		(property "Datasheet" "~"
+			(at 62.23 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5039,7 +5049,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 58.42 0)
+			(at 62.23 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5048,7 +5058,7 @@
 			)
 		)
 		(property "MPN" "CONMHF1-SMD-G-T"
-			(at 63.5 58.42 0)
+			(at 62.23 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5057,7 +5067,7 @@
 			)
 		)
 		(property "LCSC Part" "C5137195"
-			(at 63.5 58.42 0)
+			(at 62.23 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5149,7 +5159,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 68.58 0)
+		(at 123.19 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5157,7 +5167,7 @@
 		(dnp no)
 		(uuid "5dcce034-c88a-43ed-b48f-7acde4d1c983")
 		(property "Reference" "#PWR07"
-			(at 124.46 74.93 0)
+			(at 123.19 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5166,7 +5176,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 72.39 0)
+			(at 123.19 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5174,7 +5184,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 68.58 0)
+			(at 123.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5183,7 +5193,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 68.58 0)
+			(at 123.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5192,7 +5202,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 68.58 0)
+			(at 123.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5278,8 +5288,134 @@
 		)
 	)
 	(symbol
+		(lib_id "7792:7792")
+		(at 73.66 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "666a1767-f11f-4b30-8da3-7c2ebe7ed27a")
+		(property "Reference" "J4"
+			(at 83.82 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "7792"
+			(at 83.82 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "7792:7792"
+			(at 90.17 253.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p69.pdf"
+			(at 90.17 353.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Terminals M4 Screw terminal"
+			(at 73.66 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "10.1"
+			(at 90.17 553.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "534-7792"
+			(at 90.17 653.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/7792?qs=%2F%252BPMR94VuMYaltz9s0CUIQ%3D%3D"
+			(at 90.17 753.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Keystone Electronics"
+			(at 90.17 853.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "7792"
+			(at 90.17 953.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "54a6db7b-4283-4b92-8732-16f462f79b9c")
+		)
+		(pin "1"
+			(uuid "d7a3f140-07a3-4d1c-9a96-8f3d22c2f339")
+		)
+		(pin "2"
+			(uuid "3316541a-1502-42a4-a494-58b4420a4451")
+		)
+		(pin "3"
+			(uuid "fd0aa28a-c1d3-404d-8477-df22bcd36ea3")
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:PMEG4020ER")
-		(at 76.2 58.42 180)
+		(at 74.93 58.42 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5288,7 +5424,7 @@
 		(fields_autoplaced yes)
 		(uuid "6fc96a1f-e4cb-4e94-9cfd-14957774a5f2")
 		(property "Reference" "D3"
-			(at 76.5175 52.07 0)
+			(at 75.2475 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5296,7 +5432,7 @@
 			)
 		)
 		(property "Value" "PMEG4020ER"
-			(at 76.5175 54.61 0)
+			(at 75.2475 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5304,7 +5440,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
-			(at 76.2 53.975 0)
+			(at 74.93 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5313,7 +5449,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG4020ER.pdf"
-			(at 76.2 58.42 0)
+			(at 74.93 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5322,7 +5458,7 @@
 			)
 		)
 		(property "Description" "40V, 2A low Vf MEGA Schottky barrier rectifier, SOD-123W"
-			(at 76.2 58.42 0)
+			(at 74.93 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5331,7 +5467,7 @@
 			)
 		)
 		(property "MPN" "PMEG4020ER,115"
-			(at 76.2 58.42 0)
+			(at 74.93 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5340,7 +5476,7 @@
 			)
 		)
 		(property "Mouser" "771-PMEG4020ER115"
-			(at 76.2 58.42 0)
+			(at 74.93 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5564,7 +5700,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0R"
+		(property "Value" "0R_FB"
 			(at 167.64 76.1618 0)
 			(effects
 				(font
@@ -5682,7 +5818,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 124.46 55.88 0)
+		(at 123.19 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5690,7 +5826,7 @@
 		(dnp no)
 		(uuid "80b1f163-4786-4a59-ba67-4af3c3d95186")
 		(property "Reference" "#PWR04"
-			(at 124.46 59.69 0)
+			(at 123.19 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5699,7 +5835,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 124.46 52.07 0)
+			(at 123.19 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5707,7 +5843,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 55.88 0)
+			(at 123.19 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5716,7 +5852,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 55.88 0)
+			(at 123.19 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5725,7 +5861,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 124.46 55.88 0)
+			(at 123.19 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6138,7 +6274,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:SPX3819M5-L-5-0")
-		(at 111.76 60.96 0)
+		(at 110.49 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6147,7 +6283,7 @@
 		(fields_autoplaced yes)
 		(uuid "950efbb9-bda2-442d-80f4-4456b60ba82a")
 		(property "Reference" "U2"
-			(at 111.76 52.07 0)
+			(at 110.49 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6155,7 +6291,7 @@
 			)
 		)
 		(property "Value" "SPX3819M5-L-5-0"
-			(at 111.76 54.61 0)
+			(at 110.49 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6163,7 +6299,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 111.76 52.705 0)
+			(at 110.49 52.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6172,7 +6308,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.exar.com/content/document.ashx?id=22106&languageid=1033&type=Datasheet&partnumber=SPX3819&filename=SPX3819.pdf&part=SPX3819"
-			(at 111.76 60.96 0)
+			(at 110.49 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6181,7 +6317,7 @@
 			)
 		)
 		(property "Description" "500mA Low drop-out regulator, Fixed Output 5.0V, SOT-23-5"
-			(at 111.76 60.96 0)
+			(at 110.49 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6190,7 +6326,7 @@
 			)
 		)
 		(property "MPN" "SPX3819M5-L-5-0/TR"
-			(at 111.76 60.96 0)
+			(at 110.49 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6199,7 +6335,7 @@
 			)
 		)
 		(property "Mouser" "701-SPX3819M5-L-50TR"
-			(at 111.76 60.96 0)
+			(at 110.49 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6386,7 +6522,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 86.36 58.42 90)
+		(at 85.09 58.42 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6395,15 +6531,15 @@
 		(fields_autoplaced yes)
 		(uuid "989f7ebe-25c1-4d8d-bf9a-8001e539b82c")
 		(property "Reference" "R20"
-			(at 86.36 52.07 90)
+			(at 85.09 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "10"
-			(at 86.36 54.61 90)
+		(property "Value" "10R"
+			(at 85.09 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6411,7 +6547,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 86.36 60.198 90)
+			(at 85.09 60.198 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6420,7 +6556,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 58.42 0)
+			(at 85.09 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6429,7 +6565,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 86.36 58.42 0)
+			(at 85.09 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6596,7 +6732,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 111.76 68.58 0)
+		(at 110.49 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6604,7 +6740,7 @@
 		(dnp no)
 		(uuid "9b7f0db6-a72c-42d2-92de-1fbaac9793a0")
 		(property "Reference" "#PWR03"
-			(at 111.76 74.93 0)
+			(at 110.49 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6613,7 +6749,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 111.76 72.39 0)
+			(at 110.49 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6621,7 +6757,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 68.58 0)
+			(at 110.49 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6630,7 +6766,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 68.58 0)
+			(at 110.49 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6639,7 +6775,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 111.76 68.58 0)
+			(at 110.49 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7018,7 +7154,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 124.46 64.77 180)
+		(at 123.19 64.77 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7026,7 +7162,7 @@
 		(dnp no)
 		(uuid "adfbe4f5-d0e8-4f06-bfda-222c438639da")
 		(property "Reference" "C13"
-			(at 127 63.2649 0)
+			(at 125.73 63.2649 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7034,8 +7170,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100n"
-			(at 127 66.04 0)
+		(property "Value" "100n_LF"
+			(at 125.73 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7044,7 +7180,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 123.4948 60.96 0)
+			(at 122.2248 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7053,7 +7189,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 64.77 0)
+			(at 123.19 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7062,7 +7198,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 64.77 0)
+			(at 123.19 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7071,7 +7207,7 @@
 			)
 		)
 		(property "voltage" "25V"
-			(at 129.54 68.58 0)
+			(at 128.27 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8071,7 +8207,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 68.58 0)
+		(at 62.23 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8079,7 +8215,7 @@
 		(dnp no)
 		(uuid "f231041b-336c-4b9b-9f86-123f9dc12d97")
 		(property "Reference" "#PWR01"
-			(at 63.5 74.93 0)
+			(at 62.23 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8088,7 +8224,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 72.39 0)
+			(at 62.23 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8096,7 +8232,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 68.58 0)
+			(at 62.23 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8105,7 +8241,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 68.58 0)
+			(at 62.23 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8114,7 +8250,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 68.58 0)
+			(at 62.23 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
