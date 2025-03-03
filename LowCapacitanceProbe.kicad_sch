@@ -5392,6 +5392,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "7792"
+			(at 73.66 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "534-7792"
+			(at 73.66 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "54a6db7b-4283-4b92-8732-16f462f79b9c")
 		)
