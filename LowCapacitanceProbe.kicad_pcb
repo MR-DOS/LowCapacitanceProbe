@@ -10517,6 +10517,17 @@
 		(layer "Edge.Cuts")
 		(uuid "b00db5ee-1056-4451-836a-1eb295ac49a5")
 	)
+	(gr_rect
+		(start 117.5 48.15)
+		(end 123.3 40.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "de45dffa-1a36-40e5-bf34-97fd6005d94c")
+	)
 	(gr_line
 		(start 105.7 92.5)
 		(end 124 92.5)
