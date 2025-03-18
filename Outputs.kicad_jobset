@@ -95,6 +95,41 @@
         "zoom": 0.8
       },
       "type": "pcb_render"
+    },
+    {
+      "description": "",
+      "id": "c46e0a17-1e50-4a37-ab79-0deb9c9fc88d",
+      "settings": {
+        "board_only": false,
+        "board_outlines_chaining_epsilon": 0.01,
+        "cut_vias_in_body": false,
+        "description": "",
+        "export_board_body": true,
+        "export_components": true,
+        "export_inner_copper": false,
+        "export_pads": false,
+        "export_silkscreen": false,
+        "export_soldermask": false,
+        "export_tracks": false,
+        "export_zones": false,
+        "fill_all_vias": false,
+        "format": "step",
+        "fuse_shapes": false,
+        "include_dnp": true,
+        "include_unspecified": true,
+        "occt_format": 0,
+        "optimize_step": true,
+        "output_filename": "board.step",
+        "overwrite": true,
+        "subst_models": true,
+        "use_drill_origin": false,
+        "use_grid_origin": true,
+        "user_origin.x": 0.0,
+        "user_origin.y": 0.0,
+        "vrml_model_dir": "",
+        "vrml_relative_paths": false
+      },
+      "type": "pcb_export_3d"
     }
   ],
   "meta": {
@@ -107,6 +142,17 @@
       "only": [],
       "settings": {
         "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Images_render\\"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "Export STEP",
+      "id": "0e07f13e-421a-475d-becb-35a21460cc43",
+      "only": [
+        "c46e0a17-1e50-4a37-ab79-0deb9c9fc88d"
+      ],
+      "settings": {
+        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\3D\\"
       },
       "type": "folder"
     }
