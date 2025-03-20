@@ -139,7 +139,10 @@
     {
       "description": "Render PCB Images",
       "id": "aea397b3-94fb-475f-85c1-637842b30a68",
-      "only": [],
+      "only": [
+        "3e9227ed-313f-4605-8ff9-5d77faf42489",
+        "e6a795e7-ead5-439a-92ab-12d0009ee066"
+      ],
       "settings": {
         "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Images_render\\"
       },
