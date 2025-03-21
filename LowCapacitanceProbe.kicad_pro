@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.3
+          "min_clearance": 0.1
         }
       },
       "diff_pair_dimensions": [
@@ -127,25 +127,25 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_clearance": 0.1,
+        "min_connection": 0.1,
+        "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.2,
-        "min_microvia_drill": 0.1,
+        "min_hole_clearance": 0.35,
+        "min_hole_to_hole": 0.45,
+        "min_microvia_diameter": 0.25,
+        "min_microvia_drill": 0.15,
         "min_resolved_spokes": 2,
-        "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
-        "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_silk_clearance": 0.15,
+        "min_text_height": 1.0,
+        "min_text_thickness": 0.153,
+        "min_through_hole_diameter": 0.15,
+        "min_track_width": 0.1,
+        "min_via_annular_width": 0.25,
+        "min_via_diameter": 0.25,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.05,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -160,7 +160,7 @@
       "teardrop_parameters": [
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -171,7 +171,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -182,7 +182,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -193,7 +193,14 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.25,
+        0.3,
+        0.5,
+        0.75,
+        1.0,
+        1.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -225,6 +232,18 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.2
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.25
+        },
+        {
+          "diameter": 0.7,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false,
@@ -504,13 +523,71 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.4,
+        "name": "RF_50R_NoL2_Connector",
+        "pcb_color": "rgb(15, 118, 20)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.5
+      },
+      {
+        "clearance": 0.15,
+        "name": "RF_50R_NoL2_Tracks",
+        "pcb_color": "rgb(22, 178, 30)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.65
+      },
+      {
+        "clearance": 0.5,
+        "name": "RF_HiZ",
+        "pcb_color": "rgb(32, 255, 43)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2
       }
     ],
     "meta": {
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/DRAIN": [
+        "RF_HiZ"
+      ],
+      "/G1": [
+        "RF_HiZ"
+      ],
+      "/G2": [
+        "RF_HiZ"
+      ],
+      "/IN": [
+        "RF_HiZ"
+      ],
+      "/IN_2": [
+        "RF_HiZ"
+      ],
+      "/OUT": [
+        "RF_50R_NoL2_Tracks"
+      ],
+      "/OUT_UNF": [
+        "RF_50R_NoL2_Tracks"
+      ],
+      "/SOURCE": [
+        "RF_50R_NoL2_Tracks"
+      ],
+      "Net-(C3-Pad1)": [
+        "RF_HiZ"
+      ],
+      "Net-(C5-Pad2)": [
+        "RF_50R_NoL2_Tracks"
+      ],
+      "Net-(D1-K)": [
+        "RF_HiZ"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {

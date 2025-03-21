@@ -2579,7 +2579,7 @@
 	)
 	(text "Do not connect voltages above 100 V!\nInput waveforms max. 50 Vp-p. (due to distortion)\nPermissible peaks up to 150 V.\nDamage likely above 350 V."
 		(exclude_from_sim no)
-		(at 60.96 125.73 0)
+		(at 54.61 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2656,12 +2656,12 @@
 	)
 	(text "Ids~16 mA"
 		(exclude_from_sim no)
-		(at 166.37 116.84 0)
+		(at 175.26 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "d8814480-166a-427a-8c17-95adcd1283d9")
 	)
@@ -3307,7 +3307,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 130.81) (xy 90.17 140.97)
+			(xy 90.17 134.62) (xy 90.17 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3656,12 +3656,12 @@
 		(uuid "2467b822-724b-4b8b-a4c6-4e9c088b0f0e")
 	)
 	(label "DRAIN"
-		(at 165.1 115.57 180)
+		(at 165.1 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "2a3332f2-5b77-4c5e-8012-dc066c24d2ef")
 	)
@@ -3774,6 +3774,148 @@
 			(justify left bottom)
 		)
 		(uuid "e910de59-fc99-447d-ae23-baf1bbf7a77e")
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 162.56 134.62) (xy 227.33 134.62) (xy 227.33 121.92) (xy 167.64 121.92) (xy 162.56 127)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type color)
+				(color 22 178 30 0.15)
+			)
+			(uuid 4791572a-0f3c-4a54-832a-0ee3e2c82983)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 82.55 111.76) (xy 133.35 111.76) (xy 135.89 109.22) (xy 171.45 109.22) (xy 171.45 116.84) (xy 160.02 116.84)
+				(xy 160.02 137.16) (xy 137.16 137.16) (xy 123.19 123.19) (xy 82.55 123.19)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type color)
+				(color 32 255 43 0.15)
+			)
+			(uuid d35012e5-bc17-47e6-83b0-6efafe351b1d)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 227.33 121.92) (xy 241.3 121.92) (xy 241.3 134.62) (xy 227.33 134.62)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type color)
+				(color 15 118 20 0.15)
+			)
+			(uuid dd04c415-8b63-48ac-b0a3-b975958b8890)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 187.96 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a0a6c08-2f93-4140-8bcb-e0eb554b52cb")
+		(property "Netclass" "RF_50R_NoL2_Tracks"
+			(at 188.6585 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 165.1 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 232.41 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa10edf4-822b-43f9-920a-f1978e6c7cf4")
+		(property "Netclass" ""
+			(at 165.1 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Component Class" "RF_50R_NoL2_Connector"
+			(at 233.1085 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 90.17 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b062160a-7991-4638-ae82-827748279689")
+		(property "Netclass" "RF_HiZ"
+			(at 90.8685 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 67.31 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -4525,10 +4667,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "306abf3b-3588-4a06-be05-bd27a8a8e29d")
 		(property "Reference" "Q1"
-			(at 167.64 119.3799 0)
+			(at 167.64 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4537,7 +4678,7 @@
 			)
 		)
 		(property "Value" "BF998"
-			(at 167.64 121.9199 0)
+			(at 167.64 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4663,16 +4804,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 90.17 130.81 0)
+		(at 90.17 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "422b10b9-e829-44a2-8808-05edd8cb3050")
 		(property "Reference" "TP3"
-			(at 90.17 121.92 0)
+			(at 90.17 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4680,7 +4820,7 @@
 			)
 		)
 		(property "Value" "Pogo needle"
-			(at 90.17 124.46 0)
+			(at 90.17 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4688,7 +4828,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
-			(at 95.25 130.81 0)
+			(at 95.25 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4697,7 +4837,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 95.25 130.81 0)
+			(at 95.25 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4706,7 +4846,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.17 130.81 0)
+			(at 90.17 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4715,7 +4855,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 90.17 130.81 0)
+			(at 90.17 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4724,7 +4864,7 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 90.17 130.81 0)
+			(at 90.17 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5977,7 +6117,7 @@
 			)
 		)
 		(property "Rating" "~2.6 mW"
-			(at 170.18 113.03 0)
+			(at 170.18 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8006,10 +8146,9 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f6c777e6-74dd-412a-b394-5638db968091")
 		(property "Reference" "TP1"
-			(at 90.678 113.03 90)
+			(at 90.17 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8017,7 +8156,7 @@
 			)
 		)
 		(property "Value" "Fixed needle"
-			(at 90.678 115.57 90)
+			(at 90.17 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
