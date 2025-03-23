@@ -8163,7 +8163,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Horizontal"
+		(property "Footprint" "petr:P50-B1_needle"
 			(at 93.98 113.03 0)
 			(effects
 				(font
