@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 1.0,
+          "height": 2.0,
+          "width": 2.0
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -276,7 +276,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_issues|1625600|1206500|306abf3b-3588-4a06-be05-bd27a8a8e29d|00000000-0000-0000-0000-000000000000|||",
+        "This is an obsolete comment, having it only contained in cache of this project is OK as it is not supposed to be used anymore."
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -537,7 +542,7 @@
         "name": "RF_50R_NoL2_Tracks",
         "pcb_color": "rgb(22, 178, 30)",
         "priority": 2,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(25, 182, 199)",
         "track_width": 0.65
       },
       {
@@ -545,7 +550,7 @@
         "name": "RF_HiZ",
         "pcb_color": "rgb(32, 255, 43)",
         "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(183, 154, 23)",
         "track_width": 0.2
       }
     ],
@@ -598,7 +603,7 @@
       "plot": "pdf/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": ".step",
+      "step": "board.step",
       "svg": "",
       "vrml": ""
     },
