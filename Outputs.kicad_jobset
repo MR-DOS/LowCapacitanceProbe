@@ -1,7 +1,7 @@
 {
   "jobs": [
     {
-      "description": "Render PCB top",
+      "description": "Render PCB top, raytracing",
       "id": "3e9227ed-313f-4605-8ff9-5d77faf42489",
       "settings": {
         "bg_style": "transparent",
@@ -19,7 +19,7 @@
           0.0,
           0.0
         ],
-        "light_side_elevation": 60,
+        "light_side_elevation": 65,
         "light_side_intensity": [
           0.5,
           0.5,
@@ -49,7 +49,7 @@
       "type": "pcb_render"
     },
     {
-      "description": "Render PCB bottom",
+      "description": "Render PCB bottom, raytracing",
       "id": "e6a795e7-ead5-439a-92ab-12d0009ee066",
       "settings": {
         "bg_style": "transparent",
@@ -97,7 +97,7 @@
       "type": "pcb_render"
     },
     {
-      "description": "",
+      "description": "STEP 3D model export",
       "id": "c46e0a17-1e50-4a37-ab79-0deb9c9fc88d",
       "settings": {
         "board_only": false,
@@ -107,14 +107,14 @@
         "export_board_body": true,
         "export_components": true,
         "export_inner_copper": false,
-        "export_pads": false,
+        "export_pads": true,
         "export_silkscreen": false,
-        "export_soldermask": false,
+        "export_soldermask": true,
         "export_tracks": false,
-        "export_zones": false,
+        "export_zones": true,
         "fill_all_vias": false,
         "format": "step",
-        "fuse_shapes": false,
+        "fuse_shapes": true,
         "include_dnp": true,
         "include_unspecified": true,
         "occt_format": 0,
@@ -130,6 +130,66 @@
         "vrml_relative_paths": false
       },
       "type": "pcb_export_3d"
+    },
+    {
+      "description": "Export DXF of outline (0 thickness lines)",
+      "id": "5753d152-b00b-4f3c-ac29-aa68dac7ab17",
+      "settings": {
+        "black_and_white": true,
+        "crossout_dnp_footprints_on_fab_layers": false,
+        "description": "",
+        "drawing_sheet": "",
+        "drill_shape": 2,
+        "gen_mode": "multi",
+        "hide_dnp_footprints_on_fab_layers": false,
+        "layers": [
+          "In30.Cu",
+          "In29.Cu",
+          "In28.Cu",
+          "In27.Cu",
+          "In26.Cu",
+          "In25.Cu",
+          "In24.Cu",
+          "In23.Cu",
+          "In22.Cu",
+          "In21.Cu",
+          "In20.Cu",
+          "In19.Cu",
+          "In18.Cu",
+          "In17.Cu",
+          "In16.Cu",
+          "In15.Cu",
+          "In14.Cu",
+          "In13.Cu",
+          "In12.Cu",
+          "In11.Cu",
+          "In10.Cu",
+          "In9.Cu",
+          "In8.Cu",
+          "In7.Cu",
+          "In6.Cu",
+          "In5.Cu",
+          "In4.Cu",
+          "In3.Cu",
+          "Edge.Cuts"
+        ],
+        "layers_to_include_on_all_layers": [],
+        "mirror": false,
+        "negative": false,
+        "output_filename": "",
+        "plot_drawing_sheet": false,
+        "plot_footprint_values": true,
+        "plot_graphic_items_using_contours": false,
+        "plot_pad_numbers": false,
+        "plot_ref_des": true,
+        "polygon_mode": false,
+        "sketch_dnp_footprints_on_fab_layers": false,
+        "sketch_pads_on_fab_layers": false,
+        "subtract_solder_mask_from_silk": false,
+        "units": "mm",
+        "use_drill_origin": false
+      },
+      "type": "pcb_export_dxf"
     }
   ],
   "meta": {
@@ -137,7 +197,7 @@
   },
   "outputs": [
     {
-      "description": "Render PCB Images",
+      "description": "Render PCB Images using raytracing",
       "id": "aea397b3-94fb-475f-85c1-637842b30a68",
       "only": [
         "3e9227ed-313f-4605-8ff9-5d77faf42489",
@@ -149,13 +209,24 @@
       "type": "folder"
     },
     {
-      "description": "Export STEP",
+      "description": "Export STEP for CAD (no tracks)",
       "id": "0e07f13e-421a-475d-becb-35a21460cc43",
       "only": [
         "c46e0a17-1e50-4a37-ab79-0deb9c9fc88d"
       ],
       "settings": {
         "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\3D\\"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "Export DXF of outline (0 thickness lines) for CAD or outline filleting",
+      "id": "28ab440c-2528-4b1e-ab39-49d059cb31be",
+      "only": [
+        "5753d152-b00b-4f3c-ac29-aa68dac7ab17"
+      ],
+      "settings": {
+        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\DXF\\"
       },
       "type": "folder"
     }
