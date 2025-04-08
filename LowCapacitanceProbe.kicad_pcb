@@ -166,7 +166,6 @@
 	(property "Author" "Petr Polášek")
 	(property "DATE" "2025-03-27")
 	(property "Initials" "PP")
-	(property "PCB" "LowCapacitanceProbe")
 	(property "Version" "1.0.0")
 	(net 0 "")
 	(net 1 "GND")
