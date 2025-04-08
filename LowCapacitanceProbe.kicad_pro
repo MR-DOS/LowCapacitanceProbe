@@ -721,7 +721,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_issues|1625600|1206500|306abf3b-3588-4a06-be05-bd27a8a8e29d|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -1043,7 +1048,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "board.step",
+      "step": ".step",
       "svg": "",
       "vrml": ""
     },
@@ -1212,7 +1217,6 @@
     "Author": "Petr Polášek",
     "DATE": "2025-03-27",
     "Initials": "PP",
-    "PCB": "LowCapacitanceProbe",
     "Version": "1.0.0"
   }
 }

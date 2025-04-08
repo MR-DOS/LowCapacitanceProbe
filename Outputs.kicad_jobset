@@ -1,7 +1,7 @@
 {
   "jobs": [
     {
-      "description": "Render PCB top, raytracing",
+      "description": "Render PCB top, raytracing, PNG with transparency",
       "id": "3e9227ed-313f-4605-8ff9-5d77faf42489",
       "settings": {
         "bg_style": "transparent",
@@ -49,7 +49,7 @@
       "type": "pcb_render"
     },
     {
-      "description": "Render PCB bottom, raytracing",
+      "description": "Render PCB bottom, raytracing, PNG with transparency",
       "id": "e6a795e7-ead5-439a-92ab-12d0009ee066",
       "settings": {
         "bg_style": "transparent",
@@ -97,7 +97,7 @@
       "type": "pcb_render"
     },
     {
-      "description": "STEP 3D model export",
+      "description": "STEP 3D model export (components, zones + solder mask + pads)",
       "id": "c46e0a17-1e50-4a37-ab79-0deb9c9fc88d",
       "settings": {
         "board_only": false,
@@ -132,7 +132,7 @@
       "type": "pcb_export_3d"
     },
     {
-      "description": "Export DXF of outline (0 thickness lines)",
+      "description": "Export DXF of PCB outline (0 thickness lines)",
       "id": "5753d152-b00b-4f3c-ac29-aa68dac7ab17",
       "settings": {
         "black_and_white": true,
@@ -190,6 +190,244 @@
         "use_drill_origin": false
       },
       "type": "pcb_export_dxf"
+    },
+    {
+      "description": "Export PDF of schematic",
+      "id": "0e4bc32c-5cd7-475d-9cf7-babdea295f5f",
+      "settings": {
+        "black_and_white": false,
+        "color_theme": "KiCad Classic",
+        "description": "",
+        "drawing_sheet": "",
+        "format": "pdf",
+        "hpgl_page_size": "default",
+        "hpgl_pen_size": 1.0,
+        "hpgl_plot_origin": "A3",
+        "min_pen_width": 847,
+        "output_dir": "",
+        "page_size": "auto",
+        "pdf_hierarchical_links": true,
+        "pdf_metadata": true,
+        "pdf_property_popups": true,
+        "plot_all": true,
+        "plot_drawing_sheet": true,
+        "use_background_color": true
+      },
+      "type": "sch_export_plot_pdf"
+    },
+    {
+      "description": "Export SVG of schematic",
+      "id": "4b5485f9-2187-4b0c-b1a4-78c2d5021028",
+      "settings": {
+        "black_and_white": false,
+        "color_theme": "KiCad Classic",
+        "description": "",
+        "drawing_sheet": "",
+        "format": "svg",
+        "hpgl_page_size": "default",
+        "hpgl_pen_size": 1.0,
+        "hpgl_plot_origin": "A3",
+        "min_pen_width": 847,
+        "output_dir": "",
+        "page_size": "auto",
+        "pdf_hierarchical_links": true,
+        "pdf_metadata": true,
+        "pdf_property_popups": true,
+        "plot_all": true,
+        "plot_drawing_sheet": true,
+        "use_background_color": true
+      },
+      "type": "sch_export_plot_svg"
+    },
+    {
+      "description": "",
+      "id": "1ddd9fbc-785b-46a0-aa12-77fbd1b1ea23",
+      "settings": {
+        "bom_format_preset_name": "CSV",
+        "bom_preset_name": "",
+        "description": "",
+        "exclude_dnp": false,
+        "field_delimiter": ",",
+        "fields_group_by": [
+          "Value"
+        ],
+        "fields_labels": [
+          "Reference",
+          "Value",
+          "Footprint",
+          "MPN",
+          "Mouser",
+          "Datasheet",
+          "Description",
+          "Qty",
+          "#",
+          "LCSC Part",
+          "Rating",
+          "voltage"
+        ],
+        "fields_ordered": [
+          "Reference",
+          "Value",
+          "Footprint",
+          "MPN",
+          "Mouser",
+          "__Datasheet",
+          "__Description",
+          "${QUANTITY}",
+          "__${ITEM_NUMBER}",
+          "__LCSC Part",
+          "__Rating",
+          "__voltage"
+        ],
+        "filter_string": "",
+        "include_excluded_from_bom": false,
+        "keep_line_breaks": false,
+        "keep_tabs": false,
+        "output_filename": "LowCapacitanceProbe.csv",
+        "ref_delimiter": ",",
+        "ref_range_delimiter": "",
+        "sort_asc": true,
+        "sort_field": "Reference",
+        "string_delimiter": "\""
+      },
+      "type": "sch_export_bom"
+    },
+    {
+      "description": "STEP 3D model export (simplified, only components)",
+      "id": "40ce0665-9dd3-4d48-9afe-c1a61f29ae9a",
+      "settings": {
+        "board_only": false,
+        "board_outlines_chaining_epsilon": 0.01,
+        "cut_vias_in_body": false,
+        "description": "",
+        "export_board_body": true,
+        "export_components": true,
+        "export_inner_copper": false,
+        "export_pads": false,
+        "export_silkscreen": false,
+        "export_soldermask": false,
+        "export_tracks": false,
+        "export_zones": false,
+        "fill_all_vias": false,
+        "format": "step",
+        "fuse_shapes": true,
+        "include_dnp": true,
+        "include_unspecified": true,
+        "occt_format": 0,
+        "optimize_step": true,
+        "output_filename": ".step",
+        "overwrite": true,
+        "subst_models": true,
+        "use_drill_origin": false,
+        "use_grid_origin": true,
+        "user_origin.x": 0.0,
+        "user_origin.y": 0.0,
+        "vrml_model_dir": "",
+        "vrml_relative_paths": false
+      },
+      "type": "pcb_export_3d"
+    },
+    {
+      "description": "",
+      "id": "444670d2-5cf1-4742-843d-33514fa383cc",
+      "settings": {
+        "black_and_white": true,
+        "create_gerber_job_file": true,
+        "crossout_dnp_footprints_on_fab_layers": false,
+        "description": "",
+        "disable_aperture_macros": false,
+        "drawing_sheet": "",
+        "drill_shape": 2,
+        "hide_dnp_footprints_on_fab_layers": false,
+        "include_netlist_attributes": true,
+        "layers": [
+          "B.Cu",
+          "B.Mask",
+          "B.SilkS",
+          "In30.Cu",
+          "In29.Cu",
+          "In28.Cu",
+          "In27.Cu",
+          "In26.Cu",
+          "In25.Cu",
+          "In24.Cu",
+          "In23.Cu",
+          "In22.Cu",
+          "In21.Cu",
+          "In20.Cu",
+          "In19.Cu",
+          "In18.Cu",
+          "In17.Cu",
+          "In16.Cu",
+          "In15.Cu",
+          "In14.Cu",
+          "In13.Cu",
+          "In12.Cu",
+          "In11.Cu",
+          "In10.Cu",
+          "In9.Cu",
+          "In8.Cu",
+          "In7.Cu",
+          "In6.Cu",
+          "In5.Cu",
+          "In4.Cu",
+          "In3.Cu",
+          "In2.Cu",
+          "In1.Cu",
+          "F.Cu",
+          "F.Mask",
+          "F.SilkS",
+          "Edge.Cuts"
+        ],
+        "layers_to_include_on_all_layers": [],
+        "mirror": false,
+        "negative": false,
+        "output_filename": "",
+        "plot_drawing_sheet": false,
+        "plot_footprint_values": true,
+        "plot_pad_numbers": false,
+        "plot_ref_des": true,
+        "precision": 5,
+        "sketch_dnp_footprints_on_fab_layers": false,
+        "sketch_pads_on_fab_layers": false,
+        "subtract_solder_mask_from_silk": true,
+        "use_drill_origin": true,
+        "use_protel_file_extension": true,
+        "use_x2_format": true
+      },
+      "type": "pcb_export_gerbers"
+    },
+    {
+      "description": "",
+      "id": "0fcfcf47-8dfb-454f-8c1d-38634395c97b",
+      "settings": {
+        "description": "",
+        "drill_origin": "plot",
+        "excellon.combine_pth_npth": false,
+        "excellon.minimal_header": false,
+        "excellon.mirror_y": false,
+        "excellon.oval_drill_route": false,
+        "format": "excellon",
+        "generate_map": true,
+        "gerber_precision": 5,
+        "map_format": "dxf",
+        "output_dir": "",
+        "units": "mm",
+        "zero_format": "decimal"
+      },
+      "type": "pcb_export_drill"
+    },
+    {
+      "description": "Interactive BOM (hacky way)",
+      "id": "0229c195-591a-468e-8348-39e6e72b2a4d",
+      "settings": {
+        "command": "python \"${KICAD9_3RD_PARTY}/plugins/org_openscopeproject_InteractiveHtmlBom/generate_interactive_bom.py\" --dark-mode --highlight-pin1 selected --dest-dir Exports/BOM/ --name-format %f_Interactive_BOM --include-tracks --include-nets --sort-order C,R,L,FB,D,Q,T,U,Y,X,F,SW,A,~,HS,CNN,RV,J,P,NT,MH --extra-fields \"MPN,Mouser,Rating\" --extra-data-file ${PROJECTNAME}.kicad_pcb ${PROJECTNAME}.kicad_pcb",
+        "description": "",
+        "ignore_exit_code": false,
+        "output_filename": "ibom_full_log.log",
+        "record_output": true
+      },
+      "type": "special_execute"
     }
   ],
   "meta": {
@@ -197,7 +435,7 @@
   },
   "outputs": [
     {
-      "description": "Render PCB Images using raytracing",
+      "description": "[DOC] Render PCB Images using raytracing",
       "id": "aea397b3-94fb-475f-85c1-637842b30a68",
       "only": [
         "3e9227ed-313f-4605-8ff9-5d77faf42489",
@@ -209,7 +447,7 @@
       "type": "folder"
     },
     {
-      "description": "Export STEP for CAD (no tracks)",
+      "description": "[DOC/MECH] STEP for CAD (no tracks, but pads, zones and solder mask present)",
       "id": "0e07f13e-421a-475d-becb-35a21460cc43",
       "only": [
         "c46e0a17-1e50-4a37-ab79-0deb9c9fc88d"
@@ -220,13 +458,93 @@
       "type": "folder"
     },
     {
-      "description": "Export DXF of outline (0 thickness lines) for CAD or outline filleting",
+      "description": "[DOC/MECH] DXF of outline (0 thickness lines) for CAD or outline filleting",
       "id": "28ab440c-2528-4b1e-ab39-49d059cb31be",
       "only": [
         "5753d152-b00b-4f3c-ac29-aa68dac7ab17"
       ],
       "settings": {
         "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\DXF\\"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "[DOC] PDF + SVG of schematic",
+      "id": "88cac43e-10c1-4169-b616-ed5d11fd393c",
+      "only": [
+        "0e4bc32c-5cd7-475d-9cf7-babdea295f5f",
+        "4b5485f9-2187-4b0c-b1a4-78c2d5021028"
+      ],
+      "settings": {
+        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Schematic\\"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "[PROD] BOM, non-interactive",
+      "id": "c0b162bd-6c9c-468e-be9a-fedb37adbf1b",
+      "only": [
+        "1ddd9fbc-785b-46a0-aa12-77fbd1b1ea23"
+      ],
+      "settings": {
+        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\BOM\\"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "[DOC/MECH] STEP (simplified, only shape and components)",
+      "id": "ecb2b944-63be-4a70-9cbf-a0dda233c1ab",
+      "only": [
+        "40ce0665-9dd3-4d48-9afe-c1a61f29ae9a"
+      ],
+      "settings": {
+        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\3D\\simplified\\"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "[CHECK] Gerbers for checking",
+      "id": "195f48b0-2bda-49bd-8784-b797fa23fdd6",
+      "only": [
+        "444670d2-5cf1-4742-843d-33514fa383cc"
+      ],
+      "settings": {
+        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Gerbers\\"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "[CHECK] Drill data for checking",
+      "id": "2c524a4e-951e-4100-8ca5-fe8473110cc6",
+      "only": [
+        "0fcfcf47-8dfb-454f-8c1d-38634395c97b"
+      ],
+      "settings": {
+        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Gerbers\\"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "[PROD] Gerber+Drill",
+      "id": "82f0c440-49d0-4982-be00-562ad2ff37fe",
+      "only": [
+        "444670d2-5cf1-4742-843d-33514fa383cc",
+        "0fcfcf47-8dfb-454f-8c1d-38634395c97b"
+      ],
+      "settings": {
+        "format": "zip",
+        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Gerbers\\ZIP\\${PROJECTNAME}_v${Version}_${CURRENT_DATE}.zip"
+      },
+      "type": "archive"
+    },
+    {
+      "description": "[PROD] Generate iBOM (change directory in job, not here, KiCAD broken)",
+      "id": "468d2cff-de05-43f5-bfc1-5ca4b6edd5d2",
+      "only": [
+        "0229c195-591a-468e-8348-39e6e72b2a4d"
+      ],
+      "settings": {
+        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\BOM\\"
       },
       "type": "folder"
     }

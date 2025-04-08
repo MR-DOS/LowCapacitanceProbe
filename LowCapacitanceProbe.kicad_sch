@@ -2847,6 +2847,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "${ERC_WARNING TODO}Test noise impact of R14 and R16, test with vlaues increasing in decades."
+		(exclude_from_sim no)
+		(at 116.84 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 135 0 1)
+			)
+			(justify right)
+		)
+		(uuid "0035c74a-ebd4-4bd8-ad09-84552d63d0e8")
+	)
 	(text "Do not connect voltages above 100 V!\nInput waveforms max. 50 Vp-p. (due to distortion)\nPermissible peaks up to 150 V.\nDamage likely above 350 V."
 		(exclude_from_sim no)
 		(at 54.61 128.27 0)
@@ -2858,6 +2870,17 @@
 		)
 		(uuid "084ed978-e32b-4a0e-a9d9-98ab2517dd05")
 	)
+	(text "${ERC_WARNING TODO}Optimise value of L1, try on multiple devices."
+		(exclude_from_sim no)
+		(at 210.82 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 135 0 1)
+			)
+		)
+		(uuid "1cfbaeb7-2dc3-4811-84bd-3fcf062f00ea")
+	)
 	(text "Use only RF capacitors with low losses, ideally suited for >5 GHz!"
 		(exclude_from_sim no)
 		(at 116.84 149.86 0)
@@ -2868,6 +2891,41 @@
 			(justify left bottom)
 		)
 		(uuid "1fe2584c-8eb4-4ca8-9f69-dabe3687e2db")
+	)
+	(text "${ERC_WARNING TODO}Find out proper capacitance (range) of C3, C9, C11, D1."
+		(exclude_from_sim no)
+		(at 116.84 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 135 0 1)
+			)
+			(justify right)
+		)
+		(uuid "354c0fcf-bea8-4f40-b343-deb334aedc79")
+	)
+	(text "${ERC_WARNING TODO}Find out value of offseting resistor R17 for optimal user experience during tuning."
+		(exclude_from_sim no)
+		(at 135.89 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 135 0 1)
+			)
+		)
+		(uuid "38c8a8c2-cb2b-4542-bd16-d4fbdd248446")
+	)
+	(text "${ERC_WARNING TODO}Find out values of delinearising resistors R11, R12 for optimal user experience during tuning."
+		(exclude_from_sim no)
+		(at 116.84 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 135 0 1)
+			)
+			(justify right)
+		)
+		(uuid "4a7ca149-cb08-483f-bf94-160bda09850e")
 	)
 	(text "~2,3 V"
 		(exclude_from_sim no)
@@ -2902,7 +2960,7 @@
 		)
 		(uuid "65f6e093-fc78-4c15-95e2-caf4618ff97b")
 	)
-	(text "Calibration process:\n1) Perform this calibration in ESD safe environment!\n   Short the input, power up the probe (with VNA disconnected).\n   Not shorting the input may affect the measurement.\n2) Connect VNA, measure output impedance of the probe.\n   Tune the bias on gate 2 to get 50 Ohm output.\n3) Disconnect VNA, reconnect it to measure S21 of the probe.\n   (If varicap tuning is assembled, set it to highest possible voltage.)\n   Tune the input capacitor to get 10:1 (-20 dB) response.\n4) (If assembled, use the varicap tuning to fine-tune the gain).\n   If varicap tuning is not used, change bias to fine-tune gain.\n5) Re-measure the output impedance. If out of spec, repeat these steps.\n   This is needed because the parameters are not fully independent.\n   G2 bias has effect on peaking around roll-off (lower voltage = \n   less gain and more peaking).\n   \nNotes:\n1) If desired gain cannot be achieved, change C3.\n2) If output impedance cannot be achieved, change R10.\n3) If varicap tuning is too narrow/broad, change C11.\n   Too large C11 or too steep D1 can introduce non-linearity.\n4) R11, R12 and R18 delinearise the trimmers to make tuning easier.\n5) Trimmer C9 has screw connected to input to make tuning easier.\n   (The input is low impedance source, net after the capacitor is not.)\n6) For tuning C9, use low capacitance isolated tuning screwdriver.\n   Never tune the probe when connected to dangerous voltages!\n7) In case of bad low bandwidth, change L1.\n8) In case of instability, notches and peaks at > 500 MHz, change R7-9.\n9) Clockwise rotation of trimmers increases gain / drain current.\n\nCritical components have MPNs assigned, except for BF998 (look on eBay).\nBF998 with MOW marking may be fake, genuine are MOs or MOp :-)\nMOP with a bar above \"p\" has reversed footprint!\n\nThis probe is nonlinear, distortion increases with measured amplitude.\nAbov 50 Vp-p, distortion may increase due to protective diodes on G2.\n\nThe whole PCB shall be shielded, ideally by a 3D printed cover which\nwould be either covered by copper tape or coated with carbon and\ngalvanized with copper.\n\nTuning range should be about 2.5 dB using C9 and 1 dB using D1.\n\nMost low frequency noise will probably come from thermal noise of R14."
+	(text "Calibration process:\n1) Perform this calibration in ESD safe environment!\n   Short the input, power up the probe (with VNA disconnected).\n   Not shorting the input may affect the measurement.\n2) Connect VNA, measure output impedance of the probe.\n   Tune the bias on gate 2 to get 50 Ohm output.\n3) Disconnect VNA, reconnect it to measure S21 of the probe.\n   (If varicap tuning is assembled, set it to highest possible voltage.)\n   Tune the input capacitor to get 10:1 (-20 dB) response.\n4) (If assembled, use the varicap tuning to fine-tune the gain).\n   If varicap tuning is not used, change bias to fine-tune gain.\n5) Re-measure the output impedance. If out of spec, repeat these steps.\n   This is needed because the parameters are not fully independent.\n   G2 bias has effect on peaking around roll-off (lower voltage = \n   less gain and more peaking).\n   \nNotes:\n1) If desired gain cannot be achieved, change C3.\n2) If output impedance cannot be achieved, change R10.\n3) If varicap tuning is too narrow/broad, change C11.\n   Too large C11 or too steep D1 can introduce non-linearity.\n4) R11, R12 and R18 delinearise the trimmers to make tuning easier.\n5) Trimmer C9 has screw connected to input to make tuning easier.\n   (The input is low impedance source, net after the capacitor is not.)\n6) For tuning C9, use low capacitance isolated tuning screwdriver.\n   Never tune the probe when connected to dangerous voltages!\n7) In case of bad low bandwidth, change L1.\n8) In case of instability, notches and peaks at >500 MHz, change R7-9.\n9) After soldering, always clean solder residue!\n10) Clockwise rotation of RV2 increases gain.\n11) Clockwise rotation of RV3 increases current, decreases impedance.\n\nCritical components have MPNs assigned, except for BF998 (look on eBay).\nBF998 with MOW marking may be fake, genuine are MOs or MOp :-)\nMOP with a bar above \"p\" has reversed footprint!\n\nThis probe is nonlinear, distortion increases with measured amplitude.\nAbove 50 Vp-p, distortion may increase due to protective diodes on G2.\n\nThe whole PCB shall be shielded, ideally by a 3D printed cover which\nwould be either covered by copper tape or coated with carbon and\ngalvanized with copper and nickel.\n\nTuning range should be about 2.5 dB using C9 and 1 dB using D1.\n\nMost low frequency noise will probably come from thermal noise of R14."
 		(exclude_from_sim no)
 		(at 209.55 13.97 0)
 		(effects
@@ -2912,6 +2970,39 @@
 			(justify left top)
 		)
 		(uuid "a0283a34-9d06-48f4-9ae8-162b35e84409")
+	)
+	(text "${ERC_ERROR TODO}Try to replace BF998 with non-EOL component."
+		(exclude_from_sim no)
+		(at 165.1 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 42 0 1)
+			)
+		)
+		(uuid "a9851f3c-d7d3-4feb-b78b-258abbfb9387")
+	)
+	(text "${ERC_WARNING TODO}Optimise values of degenerating resistors, try on multiple devices."
+		(exclude_from_sim no)
+		(at 220.98 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 135 0 1)
+			)
+		)
+		(uuid "af2cdda2-d301-4ce1-8ba9-267b9bb3a609")
+	)
+	(text "${ERC_WARNING TODO}Find out value of delinearising resistor R18 for optimal user experience during tuning."
+		(exclude_from_sim no)
+		(at 135.89 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 135 0 1)
+			)
+		)
+		(uuid "b32c248b-92cb-4384-b837-f6af4bca2a6f")
 	)
 	(text "Screw connected to input!"
 		(exclude_from_sim no)
@@ -2935,6 +3026,17 @@
 		)
 		(uuid "d8814480-166a-427a-8c17-95adcd1283d9")
 	)
+	(text "${ERC_WARNING TODO}Test power supply and determne if FB1 and R19 are needed."
+		(exclude_from_sim no)
+		(at 165.1 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 135 0 1)
+			)
+		)
+		(uuid "e8051f69-6879-4de4-b028-f92ee2036801")
+	)
 	(text "6 ... 16 V\n<< 50 mA\nLOW NOISE!"
 		(exclude_from_sim no)
 		(at 52.07 46.99 0)
@@ -2945,9 +3047,9 @@
 		)
 		(uuid "ec336121-12a6-44f4-a528-964103c49a8d")
 	)
-	(text "The PCBite holder has M4 screw and external diameter of 13 mm."
+	(text "The PCBite holder has M4 screw and external diameter of 13 mm.\nImpedance controlled traces are designed for JLC PCB JLC04161H-3313 stackup.\n50R traces need to have L2 removed and coupled to L3."
 		(exclude_from_sim no)
-		(at 220.98 163.83 0)
+		(at 232.41 162.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4921,6 +5023,22 @@
 	(rule_area
 		(polyline
 			(pts
+				(xy 162.56 134.62) (xy 227.33 134.62) (xy 227.33 121.92) (xy 167.64 121.92) (xy 162.56 127)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type color)
+				(color 22 178 30 0.15)
+			)
+			(uuid 2b33d692-6622-4912-9a55-83959f7d9e01)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
 				(xy 82.55 111.76) (xy 133.35 111.76) (xy 135.89 109.22) (xy 171.45 109.22) (xy 171.45 116.84) (xy 160.02 116.84)
 				(xy 160.02 137.16) (xy 137.16 137.16) (xy 123.19 123.19) (xy 82.55 123.19)
 			)
@@ -4932,23 +5050,7 @@
 				(type color)
 				(color 32 255 43 0.15)
 			)
-			(uuid 315c4178-a4c4-4ac6-8321-633f9f5b67e6)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 162.56 134.62) (xy 227.33 134.62) (xy 227.33 121.92) (xy 167.64 121.92) (xy 162.56 127)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type color)
-				(color 22 178 30 0.15)
-			)
-			(uuid a7a5cbc3-7c95-4903-9d4d-cd47c3474e34)
+			(uuid c32e6720-0110-4d6c-9a21-273026f735af)
 		)
 	)
 	(rule_area
@@ -4964,7 +5066,7 @@
 				(type color)
 				(color 15 118 20 0.15)
 			)
-			(uuid df46339e-e3e2-4958-9a59-836300b147c6)
+			(uuid dea1276b-04ee-4440-93cf-f4151a8a288a)
 		)
 	)
 	(netclass_flag ""
@@ -6832,7 +6934,7 @@
 			)
 		)
 		(property "Rating" "250 V"
-			(at 129.54 127 90)
+			(at 130.81 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
