@@ -3,9 +3,9 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "9.0.1-rc2-6-g81914c846f"
+      "Version": "9.0.1-129-g6cd3a802a7"
     },
-    "CreationDate": "2025-04-08T16:35:36+02:00"
+    "CreationDate": "2025-04-10T10:37:01+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -61,6 +61,16 @@
     {
       "Path": "LowCapacitanceProbe-B_Cu.gbl",
       "FileFunction": "Copper,L4,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "LowCapacitanceProbe-F_Paste.gtp",
+      "FileFunction": "SolderPaste,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "LowCapacitanceProbe-B_Paste.gbp",
+      "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {

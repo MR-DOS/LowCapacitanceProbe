@@ -139,7 +139,7 @@
         "crossout_dnp_footprints_on_fab_layers": false,
         "description": "",
         "drawing_sheet": "",
-        "drill_shape": 2,
+        "drill_shape": "none",
         "gen_mode": "multi",
         "hide_dnp_footprints_on_fab_layers": false,
         "layers": [
@@ -337,12 +337,13 @@
         "description": "",
         "disable_aperture_macros": false,
         "drawing_sheet": "",
-        "drill_shape": 2,
+        "drill_shape": "none",
         "hide_dnp_footprints_on_fab_layers": false,
         "include_netlist_attributes": true,
         "layers": [
           "B.Cu",
           "B.Mask",
+          "B.Paste",
           "B.SilkS",
           "In30.Cu",
           "In29.Cu",
@@ -376,6 +377,7 @@
           "In1.Cu",
           "F.Cu",
           "F.Mask",
+          "F.Paste",
           "F.SilkS",
           "Edge.Cuts"
         ],
@@ -425,7 +427,7 @@
         "description": "",
         "ignore_exit_code": false,
         "output_filename": "ibom_full_log.log",
-        "record_output": true
+        "record_output": false
       },
       "type": "special_execute"
     }
@@ -533,7 +535,7 @@
       ],
       "settings": {
         "format": "zip",
-        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Gerbers\\ZIP\\${PROJECTNAME}_v${Version}_${CURRENT_DATE}.zip"
+        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Gerbers\\ZIP\\${PROJECTNAME}_v${Version}.zip"
       },
       "type": "archive"
     },
