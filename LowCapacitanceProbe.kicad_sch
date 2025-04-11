@@ -5023,22 +5023,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 162.56 134.62) (xy 227.33 134.62) (xy 227.33 121.92) (xy 167.64 121.92) (xy 162.56 127)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type color)
-				(color 22 178 30 0.15)
-			)
-			(uuid 2b33d692-6622-4912-9a55-83959f7d9e01)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 82.55 111.76) (xy 133.35 111.76) (xy 135.89 109.22) (xy 171.45 109.22) (xy 171.45 116.84) (xy 160.02 116.84)
 				(xy 160.02 137.16) (xy 137.16 137.16) (xy 123.19 123.19) (xy 82.55 123.19)
 			)
@@ -5050,7 +5034,23 @@
 				(type color)
 				(color 32 255 43 0.15)
 			)
-			(uuid c32e6720-0110-4d6c-9a21-273026f735af)
+			(uuid 28d1b08a-bb8b-477f-a46e-49f3245f6108)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 162.56 134.62) (xy 227.33 134.62) (xy 227.33 121.92) (xy 167.64 121.92) (xy 162.56 127)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type color)
+				(color 22 178 30 0.15)
+			)
+			(uuid 467b45ea-c7a2-4b92-9d1f-1595570bed91)
 		)
 	)
 	(rule_area
@@ -5066,7 +5066,7 @@
 				(type color)
 				(color 15 118 20 0.15)
 			)
-			(uuid dea1276b-04ee-4440-93cf-f4151a8a288a)
+			(uuid ceb01ff8-977b-47d9-b1c8-5c74f997b333)
 		)
 	)
 	(netclass_flag ""
@@ -5207,7 +5207,7 @@
 				(hide yes)
 			)
 		)
-		(property "voltage" "50 V"
+		(property "Rating" "50 V"
 			(at 96.52 68.58 0)
 			(effects
 				(font
@@ -5761,7 +5761,7 @@
 				(hide yes)
 			)
 		)
-		(property "voltage" "50 V"
+		(property "Rating" "50 V"
 			(at 142.24 68.58 0)
 			(effects
 				(font
@@ -8414,7 +8414,7 @@
 				(hide yes)
 			)
 		)
-		(property "voltage" "25V"
+		(property "Rating" "25V"
 			(at 128.27 68.58 0)
 			(effects
 				(font
@@ -9841,7 +9841,7 @@
 				(hide yes)
 			)
 		)
-		(property "voltage" "6V3"
+		(property "Rating" "6V3"
 			(at 157.48 68.58 0)
 			(effects
 				(font

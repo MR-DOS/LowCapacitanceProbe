@@ -1,8 +1,8 @@
 (version 1)
 
-(rule "Keep 50R impedance on SMA connector"
-    (condition "(A.Type != 'Zone') && (A.intersectsCourtyard('${Class:RF_50R_NoL2_Connector}'))")
-    (constraint clearance (min 0.4mm)))
+# (rule "Keep 50R impedance on SMA connector"
+#     (condition "(A.Type != 'Zone') && (A.intersectsCourtyard('${Class:RF_50R_NoL2_Connector}'))")
+#     (constraint clearance (min 0.4mm)))
 
 # Custom Design Rules (DRC) for KiCAD 7.0 (Stored in '<project>.kicad_dru' file).
 #
