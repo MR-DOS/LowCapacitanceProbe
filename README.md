@@ -70,6 +70,10 @@ Drawn in KiCAD 9.0.x
 
 [CSV BOM (save to view)](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/BOM/LowCapacitanceProbe.csv)
 
+## Jobset for exporting data
+
+Use [this jobset (download it to view)](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Outputs.kicad_jobset) for your designs, it is somewhat tested and should produce usable data. You can recreate all exports present in this repo using it.
+
 ## Sources for this design
 
 Forked from [FETProbe_V2](https://github.com/makerprobe/FETProbe_V2) by makerprobe which is an improved fork of crteensy's [FETProbe_tiny](https://github.com/crteensy/FETProbe_tiny). Some ideas are taken from the FETProbe_V2, but most of the core design was changed to allow precise gain tuning, also the original design was suffering from being near stability threshold (and thus probably required the "spike filter").
