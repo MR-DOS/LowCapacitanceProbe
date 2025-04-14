@@ -46,13 +46,13 @@ Drawn in KiCAD 9.0.x
 
 ## 3D models
 
-[STEP with solder mask, pads and copper fills](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/3D/board.step)
+[STEP with solder mask, pads and copper fills (save to view)](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/3D/board.step)
 
-[Simplified STEP](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/3D/simplified/simplified.step)
+[Simplified STEP (save to view)](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/3D/simplified/simplified.step)
 
 ## Board Shape
 
-[DXF with board shape](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/DXF/LowCapacitanceProbe-Edge_Cuts.dxf)
+[DXF with board shape (save to view)](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/DXF/LowCapacitanceProbe-Edge_Cuts.dxf)
 
 ## Gerbers for production
 
@@ -62,9 +62,9 @@ Drawn in KiCAD 9.0.x
 
 ## BOM
 
-[Interactive BOM](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/BOM/LowCapacitanceProbe_Interactive_BOM.html)
+[Interactive BOM (save to view)](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/BOM/LowCapacitanceProbe_Interactive_BOM.html)
 
-[CSV BOM](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/BOM/LowCapacitanceProbe.csv)
+[CSV BOM (save to view)](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/BOM/LowCapacitanceProbe.csv)
 
 ## Sources for this design
 
