@@ -46,7 +46,7 @@ Drawn in KiCAD 9.0.x
 
 ## PCB drawing image
 
-![PCB drawing image](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/Images_render/PCB_drawing.png)
+![PCB drawing image](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/Images_render/LowCapacitanceProbe.png)
 
 ## 3D models
 
