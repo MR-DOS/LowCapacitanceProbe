@@ -44,6 +44,10 @@ Drawn in KiCAD 9.0.x
 
 ![Schematic PNG, decent resolution](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/Schematic/LowCapacitanceProbe.png)
 
+## PCB drawing image
+
+![PCB drawing image](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/Images_render/PCB_drawing.png)
+
 ## 3D models
 
 [STEP with solder mask, pads and copper fills (save to view)](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/3D/board.step)

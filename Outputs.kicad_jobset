@@ -443,6 +443,89 @@
         "record_output": false
       },
       "type": "special_execute"
+    },
+    {
+      "description": "Export PDF of PCB",
+      "id": "0ccea8bf-2a62-4aa6-b9f8-e5e9b40f4784",
+      "settings": {
+        "back_fp_property_popups": false,
+        "black_and_white": false,
+        "color_theme": "",
+        "crossout_dnp_footprints_on_fab_layers": false,
+        "description": "",
+        "drawing_sheet": "",
+        "drill_shape": "full",
+        "front_fp_property_popups": false,
+        "hide_dnp_footprints_on_fab_layers": false,
+        "layers": [
+          "In30.Cu",
+          "In29.Cu",
+          "In28.Cu",
+          "In27.Cu",
+          "In26.Cu",
+          "In25.Cu",
+          "In24.Cu",
+          "In23.Cu",
+          "In22.Cu",
+          "In21.Cu",
+          "In20.Cu",
+          "In19.Cu",
+          "In18.Cu",
+          "In17.Cu",
+          "In16.Cu",
+          "In15.Cu",
+          "In14.Cu",
+          "In13.Cu",
+          "In12.Cu",
+          "In11.Cu",
+          "In10.Cu",
+          "In9.Cu",
+          "In8.Cu",
+          "In7.Cu",
+          "In6.Cu",
+          "In5.Cu",
+          "In4.Cu",
+          "In3.Cu",
+          "In1.Cu"
+        ],
+        "layers_to_include_on_all_layers": [
+          "In1.Cu",
+          "B.Cu",
+          "In2.Cu",
+          "F.Cu",
+          "F.SilkS",
+          "F.Fab",
+          "Dwgs.User",
+          "Edge.Cuts"
+        ],
+        "mirror": false,
+        "negative": false,
+        "output_filename": "",
+        "pdf_gen_mode": "one-page-per-layer-one-file",
+        "pdf_metadata": true,
+        "plot_drawing_sheet": true,
+        "plot_footprint_values": true,
+        "plot_pad_numbers": false,
+        "plot_ref_des": true,
+        "single_document": true,
+        "sketch_dnp_footprints_on_fab_layers": false,
+        "sketch_pads_on_fab_layers": false,
+        "subtract_solder_mask_from_silk": true,
+        "use_drill_origin": false
+      },
+      "type": "pcb_export_pdf"
+    },
+    {
+      "description": "Convert PDF of PCB to PNG (modify if export path is changed!)",
+      "id": "dde5859b-9ed8-4d3e-a6e6-92331eb85341",
+      "settings": {
+        "command": "inkscape --export-type=\"png\" --export-width=3840 ./Exports/Images_render/LowCapacitanceProbe.pdf",
+        "description": "",
+        "ignore_exit_code": false,
+        "output_filename": "",
+        "record_output": false
+      },
+      "type": "special_execute"
     }
   ],
   "meta": {
@@ -519,20 +602,10 @@
       "type": "folder"
     },
     {
-      "description": "[CHECK] Gerbers for checking",
+      "description": "[CHECK] Gerbers + drill for checking",
       "id": "195f48b0-2bda-49bd-8784-b797fa23fdd6",
       "only": [
-        "444670d2-5cf1-4742-843d-33514fa383cc"
-      ],
-      "settings": {
-        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Gerbers\\"
-      },
-      "type": "folder"
-    },
-    {
-      "description": "[CHECK] Drill data for checking",
-      "id": "2c524a4e-951e-4100-8ca5-fe8473110cc6",
-      "only": [
+        "444670d2-5cf1-4742-843d-33514fa383cc",
         "0fcfcf47-8dfb-454f-8c1d-38634395c97b"
       ],
       "settings": {
@@ -541,7 +614,7 @@
       "type": "folder"
     },
     {
-      "description": "[PROD] Gerber+Drill",
+      "description": "[PROD] Gerber+Drill, packaged",
       "id": "82f0c440-49d0-4982-be00-562ad2ff37fe",
       "only": [
         "444670d2-5cf1-4742-843d-33514fa383cc",
@@ -561,6 +634,18 @@
       ],
       "settings": {
         "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\BOM\\"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "[DOC] Export PCB drawing, for info",
+      "id": "d3ab4aaf-a8c1-41d3-af9c-2fb4979fa350",
+      "only": [
+        "0ccea8bf-2a62-4aa6-b9f8-e5e9b40f4784",
+        "dde5859b-9ed8-4d3e-a6e6-92331eb85341"
+      ],
+      "settings": {
+        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Images_render\\"
       },
       "type": "folder"
     }
