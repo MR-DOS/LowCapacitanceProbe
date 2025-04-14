@@ -44,7 +44,7 @@
         "rotation_z": 0.0,
         "side": "top",
         "width": 1920,
-        "zoom": 0.8
+        "zoom": 1.0
       },
       "type": "pcb_render"
     },
@@ -92,7 +92,7 @@
         "rotation_z": 0.0,
         "side": "bottom",
         "width": 1920,
-        "zoom": 0.8
+        "zoom": 1.0
       },
       "type": "pcb_render"
     },
@@ -240,6 +240,18 @@
       "type": "sch_export_plot_svg"
     },
     {
+      "description": "Convert SVG of schematic to PNG (modify if export path is changed!)",
+      "id": "569da716-d870-41cc-8c09-dad1536de83a",
+      "settings": {
+        "command": "inkscape --export-type=\"png\" --export-width=3840 ./Exports/Schematic/LowCapacitanceProbe.svg",
+        "description": "",
+        "ignore_exit_code": false,
+        "output_filename": "inkscape.log",
+        "record_output": false
+      },
+      "type": "special_execute"
+    },
+    {
       "description": "",
       "id": "1ddd9fbc-785b-46a0-aa12-77fbd1b1ea23",
       "settings": {
@@ -315,7 +327,7 @@
         "include_unspecified": true,
         "occt_format": 0,
         "optimize_step": true,
-        "output_filename": ".step",
+        "output_filename": "simplified.step",
         "overwrite": true,
         "subst_models": true,
         "use_drill_origin": false,
@@ -379,6 +391,7 @@
           "F.Mask",
           "F.Paste",
           "F.SilkS",
+          "F.Fab",
           "Edge.Cuts"
         ],
         "layers_to_include_on_all_layers": [],
@@ -471,11 +484,12 @@
       "type": "folder"
     },
     {
-      "description": "[DOC] PDF + SVG of schematic",
+      "description": "[DOC] PDF + SVG + PNG of schematic",
       "id": "88cac43e-10c1-4169-b616-ed5d11fd393c",
       "only": [
         "0e4bc32c-5cd7-475d-9cf7-babdea295f5f",
-        "4b5485f9-2187-4b0c-b1a4-78c2d5021028"
+        "4b5485f9-2187-4b0c-b1a4-78c2d5021028",
+        "569da716-d870-41cc-8c09-dad1536de83a"
       ],
       "settings": {
         "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Schematic\\"
