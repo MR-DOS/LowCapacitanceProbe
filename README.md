@@ -6,6 +6,8 @@
 
 2 dB flatness should be approx. 1.6 GHz, 3 dB flatness should be about 2.1 GHz, 6 dB flatness should be about 3.3 GHz. Design needs to be verified in reality (simulation is likely over-optimistic). In-band flatness should be better than 0.2 dB. Lower 6 dB corner should be at about 30 kHz while 3 dB corner is at about 50 kHz. The design should have fairly low noise, at least above 1 MHz.
 
+Drawn in KiCAD 9.0.x
+
 ## Expected issues
 
 * Large noise at < 1 MHz due to thermal noise of 1M bias resistor
@@ -29,6 +31,10 @@
 ![Board image TOP](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/Images_render/top.png)
 
 ![Board image BOT](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Exports/Images_render/bot.png)
+
+## Live on-line project browser
+
+[KiCanvas project viewer, disable layer Dwgs.User, view is not 1:1 with KiCAD](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FMR-DOS%2FLowCapacitanceProbe%2Ftree%2Fmain)
 
 ## Schematic
 
