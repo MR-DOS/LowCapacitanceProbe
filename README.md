@@ -2,9 +2,9 @@
 
 ## THIS DESIGN IS STILL UNDER CONSTRUCTION, ANY EXPORTED DATA ARE NON-FINAL AND ARE LIKELY NOT TO WORK. DO NOT ATTEMPT TO BUILD THIS DEVICE UNTIL THIS NOTICE DISAPPEARS! ALL IMAGES ARE PLACEHOLDERS AND MAY NOT FULLY REPRESENT THE REAL DEVICE AND MAY BE OUT OF SYNC WITH THE DESIGN DATA!
 
-USABLE DATA WILL BE PRESENT IN RELEASES TAB.
+## USABLE DATA WILL BE PRESENT IN RELEASES TAB.
 
-1+ GHz AC Probe with low input capacitance (less than 1 pF, hopefully)
+## 1+ GHz AC Probe with low input capacitance (less than 1 pF, hopefully)
 
 2 dB flatness should be approx. 1.6 GHz, 3 dB flatness should be about 2.1 GHz, 6 dB flatness should be about 3.3 GHz. Design needs to be verified in reality (simulation is likely over-optimistic). In-band flatness should be better than 0.2 dB. Lower 6 dB corner should be at about 30 kHz while 3 dB corner is at about 50 kHz. The design should have fairly low noise, at least above 1 MHz.
 
