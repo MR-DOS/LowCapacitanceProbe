@@ -1,12 +1,12 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,9.0.1-129-g6cd3a802a7*%
-%TF.CreationDate,2025-04-11T15:40:15+02:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,9.0.1-193-gcc69f8b9ae*%
+%TF.CreationDate,2025-04-23T10:26:54+02:00*%
 %TF.ProjectId,LowCapacitanceProbe,4c6f7743-6170-4616-9369-74616e636550,1.0.0*%
 %TF.SameCoordinates,PX22404f8PY679ca88*%
 %TF.FileFunction,Soldermask,Top*%
 %TF.FilePolarity,Negative*%
 %FSLAX45Y45*%
 G04 Gerber Fmt 4.5, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 9.0.1-129-g6cd3a802a7) date 2025-04-11 15:40:15*
+G04 Created by KiCad (PCBNEW 9.0.1-193-gcc69f8b9ae) date 2025-04-23 10:26:54*
 %MOMM*%
 %LPD*%
 G01*

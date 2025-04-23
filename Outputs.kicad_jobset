@@ -540,7 +540,7 @@
         "e6a795e7-ead5-439a-92ab-12d0009ee066"
       ],
       "settings": {
-        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Images_render\\"
+        "output_path": "${KIPRJMOD}\\Exports\\Images_render\\"
       },
       "type": "folder"
     },
@@ -551,7 +551,7 @@
         "c46e0a17-1e50-4a37-ab79-0deb9c9fc88d"
       ],
       "settings": {
-        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\3D\\"
+        "output_path": "${KIPRJMOD}\\Exports\\3D\\"
       },
       "type": "folder"
     },
@@ -562,7 +562,7 @@
         "5753d152-b00b-4f3c-ac29-aa68dac7ab17"
       ],
       "settings": {
-        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\DXF\\"
+        "output_path": "${KIPRJMOD}\\Exports\\DXF\\"
       },
       "type": "folder"
     },
@@ -575,7 +575,7 @@
         "569da716-d870-41cc-8c09-dad1536de83a"
       ],
       "settings": {
-        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Schematic\\"
+        "output_path": "${KIPRJMOD}\\Exports\\Schematic\\"
       },
       "type": "folder"
     },
@@ -586,7 +586,7 @@
         "1ddd9fbc-785b-46a0-aa12-77fbd1b1ea23"
       ],
       "settings": {
-        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\BOM\\"
+        "output_path": "${KIPRJMOD}\\Exports\\BOM\\"
       },
       "type": "folder"
     },
@@ -597,7 +597,7 @@
         "40ce0665-9dd3-4d48-9afe-c1a61f29ae9a"
       ],
       "settings": {
-        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\3D\\simplified\\"
+        "output_path": "${KIPRJMOD}\\Exports\\3D\\simplified\\"
       },
       "type": "folder"
     },
@@ -609,7 +609,7 @@
         "0fcfcf47-8dfb-454f-8c1d-38634395c97b"
       ],
       "settings": {
-        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Gerbers\\"
+        "output_path": "${KIPRJMOD}\\Exports\\Gerbers\\"
       },
       "type": "folder"
     },
@@ -622,7 +622,7 @@
       ],
       "settings": {
         "format": "zip",
-        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Gerbers\\ZIP\\${PROJECTNAME}_v${Version}.zip"
+        "output_path": "${KIPRJMOD}\\Exports\\Gerbers\\ZIP\\${PROJECTNAME}_v${Version}.zip"
       },
       "type": "archive"
     },
@@ -633,7 +633,7 @@
         "0229c195-591a-468e-8348-39e6e72b2a4d"
       ],
       "settings": {
-        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\BOM\\"
+        "output_path": "${KIPRJMOD}\\Exports\\BOM\\"
       },
       "type": "folder"
     },
@@ -645,7 +645,7 @@
         "dde5859b-9ed8-4d3e-a6e6-92331eb85341"
       ],
       "settings": {
-        "output_path": "C:\\Users\\polasekp\\Documents\\SH_private\\LowCapacitanceProbe\\Exports\\Images_render\\"
+        "output_path": "${KIPRJMOD}\\Exports\\Images_render\\"
       },
       "type": "folder"
     }

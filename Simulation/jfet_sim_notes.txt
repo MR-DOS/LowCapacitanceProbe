@@ -1,0 +1,31 @@
+Sim notes:
+2N4392 - trochu problém dosáhnout -20 dB
+2N4393 - lepší asi o 1 dB
+2N5486 - -20 dB bude asi potřebovat větší kapacitu
+J113 - horko těžko -21
+LS5912C - -20 dB bude asi potřebovat větší kapacitu
+LS5912 - asi o trochu lepší
+LS5911 - podobný
+LS845 - -20 dB bude asi potřebovat větší kapacitu
+PN4119 - trochu problém dosáhnout -20 dB
+PN4118/7 - asi lepší
+PN4393 - podobný 2N4393
+SST440 - potřeba větší kapacita
+
+
+Winners:
+PN4118 - slightly expensive, 3 pF
+**4117 - like 4118, lower current, 3 pF
+2N4393 - THT only, 14 pF
+PN4393 - THT only, 14 pF
+LS5912 - expensive, dual, 5 pF
+
+
+Ordered:
+106-SMP4118A		2x
+106-SMP4393			2x
+610-CMPF4393TR-TIN	2x
+863-MMBF4393LT1G		10x (cheap)
+610-CMPF4392		2x
+863-MMBF4392LT1G		10x (cheap)
+512-MMBF4117		10x (cheap)
