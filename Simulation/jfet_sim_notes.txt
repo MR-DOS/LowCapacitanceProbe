@@ -1,16 +1,16 @@
 Sim notes:
-2N4392 - trochu problém dosáhnout -20 dB
-2N4393 - lepší asi o 1 dB
-2N5486 - -20 dB bude asi potřebovat větší kapacitu
-J113 - horko těžko -21
-LS5912C - -20 dB bude asi potřebovat větší kapacitu
-LS5912 - asi o trochu lepší
-LS5911 - podobný
-LS845 - -20 dB bude asi potřebovat větší kapacitu
-PN4119 - trochu problém dosáhnout -20 dB
-PN4118/7 - asi lepší
-PN4393 - podobný 2N4393
-SST440 - potřeba větší kapacita
+2N4392 - slight problems getting to -20 dB
+2N4393 - better by ~1 dB
+2N5486 - -20 dB will likely need larger capacitance
+J113	 - with difficulties -21 dB
+LS5912C - -20 dB will likely need larger capacitance
+LS5912 - maybe slightly better
+LS5911 - similar
+LS845  - -20 dB will likely need larger capacitance
+PN4119 - slight problems getting to -20 dB
+PN4118/7 - probably better
+PN4393 - similar to 2N4393
+SST440 - larger capacity needed
 
 
 Winners:

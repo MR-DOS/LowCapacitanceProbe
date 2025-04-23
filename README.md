@@ -1,12 +1,14 @@
 # LowCapacitanceProbe
 
-## THIS DESIGN IS STILL UNDER CONSTRUCTION, ANY EXPORTED DATA ARE NON-FINAL AND ARE LIKELY NOT TO WORK. DO NOT ATTEMPT TO BUILD THIS DEVICE UNTIL THIS NOTICE DISAPPEARS! ALL IMAGES ARE PLACEHOLDERS AND MAY NOT FULLY REPRESENT THE REAL DEVICE AND MAY BE OUT OF SYNC WITH THE DESIGN DATA! USABLE DATA WILL BE PRESENT IN RELEASES TAB.
+## THIS DESIGN IS STILL UNDER CONSTRUCTION, ANY EXPORTED DATA ARE NON-FINAL AND ARE LIKELY NOT TO WORK. DO NOT ATTEMPT TO BUILD THIS DEVICE UNTIL THIS NOTICE DISAPPEARS! ALL IMAGES ARE PLACEHOLDERS AND MAY NOT FULLY REPRESENT THE REAL DEVICE AND MAY BE OUT OF SYNC WITH THE DESIGN DATA!
+
+USABLE DATA WILL BE PRESENT IN RELEASES TAB.
 
 1+ GHz AC Probe with low input capacitance (less than 1 pF, hopefully)
 
 2 dB flatness should be approx. 1.6 GHz, 3 dB flatness should be about 2.1 GHz, 6 dB flatness should be about 3.3 GHz. Design needs to be verified in reality (simulation is likely over-optimistic). In-band flatness should be better than 0.2 dB. Lower 6 dB corner should be at about 30 kHz while 3 dB corner is at about 50 kHz. The design should have fairly low noise, at least above 1 MHz.
 
-Drawn in KiCAD 9.0.x
+Drawn in KiCAD 9.0.x, simulated in LTspice 17.x / 24.x.
 
 ## Expected issues
 
@@ -76,7 +78,7 @@ Use [this jobset (download it to view)](https://github.com/MR-DOS/LowCapacitance
 
 ## Simulation
 
-[Simulation comparing this design and the FETProbe_V2 design](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Simulation/probe.asc) which works in LTspice 17.x and LTspice 24.x. Please note that you HAVE TO use alternate solver instead of normal solver (Tools -> Control Panel -> SPICE -> Engine -> Solver). The normal solver is faster, but has some stability issues and returns "hairy" traces of simulated gain which cannot be explained from electrical/physical standpoint.
+[Simulation comparing this design and the FETProbe_V2 design (download to view)](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Simulation/probe.asc) which works in LTspice 17.x and LTspice 24.x. Please note that you HAVE TO use alternate solver instead of normal solver (Tools -> Control Panel -> SPICE -> Engine -> Solver). The normal solver is faster, but has some stability issues and returns "hairy" traces of simulated gain which cannot be explained from electrical/physical standpoint.
 
 ## Sources for this design
 
@@ -99,6 +101,12 @@ Ability to tune the device (gain, output impedance) will be made to allow precis
 ## Plans for next versions
 
 A JFET version is planned to be tested if a JFET can replace the BF998. Even though the BF998 are not difficult to obtain, they are obsolete.
-JFET simulation [can be found here](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Simulation/probe_jfet.asc).
+JFET simulation [can be found here (download to view)](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Simulation/probe_jfet.asc).
 
 Several JFETs [were found to be similar](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Simulation/jfet_sim_notes.txt) to the BF998 in simulation. However they need to be tested.
+
+## Other notes
+
+If you want to figure out where your BF998 was produced, [look here](http://sp7pki.iq24.pl/default.asp?grupa=3536&temat=449565).
+
+Beware of buying BF998R, those have reversed pinout. Also do not buy ones marked as "WMO", those are also reversed AND in smaller package than normal. ("MOW" are OK)
