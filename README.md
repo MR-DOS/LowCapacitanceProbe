@@ -74,6 +74,10 @@ Drawn in KiCAD 9.0.x
 
 Use [this jobset (download it to view)](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Outputs.kicad_jobset) for your designs, it is somewhat tested and should produce usable data. You can recreate all exports present in this repo using it.
 
+## Simulation
+
+[Simulation comparing this design and the FETProbe_V2 design](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Simulation/probe.asc) which works in LTspice 17.x and LTspice 24.x. Please note that you HAVE TO use alternate solver instead of normal solver (Tools -> Control Panel -> SPICE -> Engine -> Solver). The normal solver is faster, but has some stability issues and returns "hairy" traces of simulated gain which cannot be explained from electrical/physical standpoint.
+
 ## Sources for this design
 
 Forked from [FETProbe_V2](https://github.com/makerprobe/FETProbe_V2) by makerprobe which is an improved fork of crteensy's [FETProbe_tiny](https://github.com/crteensy/FETProbe_tiny). Some ideas are taken from the FETProbe_V2, but most of the core design was changed to allow precise gain tuning, also the original design was suffering from being near stability threshold (and thus probably required the "spike filter").
@@ -91,3 +95,10 @@ This project will try to make some RF optimalizations, usability improvements as
 Another path for improvement is to try using a JFET whch is still in production (J3xx or 2N439x).
 
 Ability to tune the device (gain, output impedance) will be made to allow precise operation without fiddling with replacing components.
+
+## Plans for next versions
+
+A JFET version is planned to be tested if a JFET can replace the BF998. Even though the BF998 are not difficult to obtain, they are obsolete.
+JFET simulation [can be found here](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Simulation/probe_jfet.asc).
+
+Several JFETs [were found to be similar](https://github.com/MR-DOS/LowCapacitanceProbe/raw/main/Simulation/jfet_sim_notes.txt) to the BF998 in simulation. However they need to be tested.
