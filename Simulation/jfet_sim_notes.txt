@@ -15,7 +15,7 @@ SST440 - larger capacity needed
 
 Winners:
 PN4118 - slightly expensive, 3 pF
-**4117 - like 4118, lower current, 3 pF
+PN4117 - like 4118, lower current, 3 pF
 2N4393 - THT only, 14 pF
 PN4393 - THT only, 14 pF
 LS5912 - expensive, dual, 5 pF
@@ -29,3 +29,45 @@ Ordered:
 610-CMPF4392		2x
 863-MMBF4392LT1G		10x (cheap)
 512-MMBF4117		10x (cheap)
+
+
+Further notes:
+Models of JFETs now downloaded from here
+https://www.interfet.com/jfet-spice-models/
+https://www.interfet.com/jfet-datasheets/standard.jft
+2N3970/1	NSC		-24 dB
+2N5105	NSC		-24 dB
+2N4391	Linear Sys	-22 dB
+2N4856A	NSC		-21 dB
+2N5486	Siliconix	-21 dB
+2N4392/3	Linear Sys	-20 dB
+PN4117/8	Linear Sys	-20 dB
+PN4393	Linear Sys	-20 dB
+PN4119	Linear Sys	-19.5 dB
+2N4857A/8A	NSC		-19.5 dB
+2N4860A	NSC		-19.5 dB
+2N4861A	NSC		-19 dB
+2N3824	InterFET	-18 dB
+SSTJ212	Linear Sys	-10 dB
+
+BF998 optimisation A:
+G1	10
+G2	56
+D	42
+L	4n7
+BW1dB	3.9 GHz
+BW3dB	4.3 GHz
+BW6db	4.8 GHz
+Peak	3 GHZ, +0.5 dB
+Fall	20 dB/oct	
+
+BF998 optimisation B:
+G1	22
+G2	51
+D	42
+L	3n3
+BW1dB	3.4 GHz
+BW3dB	4.1 GHz
+BW6db	4.8 GHz
+Peak	1.4 GHz, +0.08 dB
+Fall	20 dB/oct
